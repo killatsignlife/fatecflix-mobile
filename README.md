@@ -18,23 +18,43 @@
 ## Inicialização
 Instruções para inicializar o projeto
 
+### Frontend - Aplicação React Native
+
+1. Clone o repositório
+```bash
+git clone https://github.com/LeiteSS/fatecflix-mobile.git
+```
+
+2. Instale as dependências
+```bash
+cd fatecflix-mobile
+npm install
+```
+
+3. Executando o projeto
+```bash
+npx expo start
+```
+
 ## Ferramentas
 As seguintes ferramentas foram usadas na construção do projeto:
 
 ### 👉 **_Backend_**
 
-- Tecnologia 1
-- Tecnologia 2
+- SpringBoot
+- Java
+- MySQL
 
 ### 👉 **_Mobile_**
 
-- Tecnologia 1
-- Tecnologia 2
+- React Native
+- React Navigation
+- Javascript
 
 ### 👉 **Web**
 
-- Tecnologia 1
-- Tecnologia 2
+- Angular
+- Typescript
 
 ### 👉 **_Desenvolvimento Geral_**
 
@@ -44,8 +64,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
   - Figma
 - Reuniões:
   - Discord
+  - Microsoft Teams
 - Diagramas:
-  - Tecnologia
+  - BrModelo
 - Apresentações:
   - Canva
   - Youtube
