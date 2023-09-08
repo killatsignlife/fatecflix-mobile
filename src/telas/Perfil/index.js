@@ -1,25 +1,58 @@
-import { StyleSheet, View, Image, Text } from 'react-native'
+import { StyleSheet, View, Image, Text, ScrollView } from 'react-native'
 import React from 'react'
+import Secao from './Secao';
 
 const Perfil = () => {
 
+  pessoal = [{
+    nome: "cpf",
+    conteudo: "123.456.789-10"
+  },
+  {
+    nome: "Nascimento",
+    conteudo: "01/01/2000"
+  }, {
+    nome: "e-mail",
+    conteudo: "vendramel@fatec.sp.gov.br"
+  }, {
+    nome: "perfil",
+    conteudo: "Aluno"
+  }
+
+  ]
+
+  academico = [{
+    nome: "curso",
+    conteudo: "Engenharia de Software"
+  }, {
+    nome: "Período",
+    conteudo: "Manhã"
+  }, {
+    nome: "Ingresso",
+    conteudo: "2021"
+  }, {
+    nome: "RA",
+    conteudo: "100100200"
+  }
+
+  ]
+
+
+
   return (
-    <View style={styles.container}>
-      <View style={styles.containerFoto}>
-        <Image style={styles.imagem} source={ require('../../../assets/imagens/vendramel.png') }/>
+    <ScrollView>
+      <View style={styles.container}>
+        <View style={styles.containerFoto}>
+          <Image style={styles.imagem} source={require('../../../assets/imagens/vendramel.png')} />
+          <Text style={styles.nome}>Wilson Vendramel</Text>
+          <Text style={styles.nomeUsuario}>@vendramel</Text>
+        </View>
+
+        <Secao titulo="Dados Pessoais" campos={pessoal} />
+        <Secao titulo="Dados Acadêmicos" campos={academico} />
+
       </View>
-      <Text style={styles.nomeSecao}>Dados Pessoais</Text>
-      <View  style={styles.containerInfo} >
-        <Text style={styles.nome}>Wilson Vendramel</Text>
-        <Text style={styles.nomeUsuario}>@vendramel</Text>
-        <Text style={styles.texto}>Perfil: Aluno</Text>
-        <Text style={styles.texto}>Curso: DSM</Text>
-        <Text style={styles.texto}>Periodo: Manhã</Text>
-        <Text style={styles.texto}>RA: 100100200</Text>
-        <Text style={styles.texto}>CPF: 319.818.940-39</Text>
-        <Text style={styles.texto}>email: vendramel@fatec.sp.gov.br</Text>
-      </View>
-    </View>
+    </ScrollView>
   )
 }
 
@@ -35,46 +68,31 @@ const styles = StyleSheet.create({
     padding: 8,
     alignItems: 'center',
     justifyContent: "center",
-    height: 240,
+    height: 320,
   },
-  imagem:{
+  imagem: {
     width: 200,
     height: 200,
-    borderRadius: 200/2
+    borderRadius: 200 / 2
   },
-  containerInfo: {
-    marginVertical: 16,
-    marginHorizontal: 24,
-    backgroundColor: "#FAF7F5",
-    borderRadius: 8,
-    padding: 6,
-  },
-  nome:{
+  nome: {
     fontSize: 22,
     textAlign: "center",
     fontWeight: "bold",
     lineHeight: 24,
-    color: "#231d19"
+    color: "#231d19",
+    marginTop: 12,
   },
   nomeUsuario: {
     fontSize: 18,
     textAlign: "center",
     color: "rgb(86,80,76)"
-  },
-  nomeSecao: {
-    color: "#231d19",
-    marginHorizontal: 24,
-    marginTop: 8,
-    fontSize: 18,
-  },
-  texto: {
-    fontSize: 16,
   }
 })
 
 
 /// Vermelho Escuro:
-/// Vermelho Claro: 
+/// Vermelho Claro:
 
 /// Branco 1: #ffffff / rgb(255,255,255)
 /// Branco 2: #f2f2f2 / rgb(242,242,242)
