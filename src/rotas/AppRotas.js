@@ -7,6 +7,7 @@ import Curso from '../telas/Curso';
 import Perfil from '../telas/Perfil';
 import { Feather } from 'react-native-vector-icons'
 
+//https://feathericons.com/
 
 export default function AppRotas() {
   const Tab = createBottomTabNavigator();
@@ -16,18 +17,18 @@ export default function AppRotas() {
         screenOptions={({ route })=>({
           headerShown: true,
           tabBarActiveTintColor: '#ff0534',
-          tabBarInactiveTintColor: '#c7c7c7',
+          tabBarInactiveTintColor: '#89837f',
           tabBarIcon: ({ color })=>{
             if(route.name === 'Home'){
-              return <Feather name="home" size={24} color={color} /> 
+              return <Feather name="home" size={18} color={color} /> 
             } else if(route.name === 'Curso'){
-              return <Feather name="play" size={24} color={color} /> 
+              return <Feather name="play" size={18} color={color} /> 
             } else {
-              return <Feather name="user" size={24} color={color} />
+              return <Feather name="user" size={18} color={color} />
             }
           },
           tabBarLabelStyle: {
-            fontSize: 13,
+            fontSize: 12,
         },
         })}
         >
