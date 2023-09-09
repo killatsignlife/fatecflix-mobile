@@ -1,6 +1,6 @@
 import { StyleSheet, View, Image, Text, ScrollView } from 'react-native'
 import React from 'react'
-import Secao from './Secao';
+import Secao from './componentes/Secao';
 
 const Perfil = () => {
 
@@ -36,7 +36,6 @@ const Perfil = () => {
   }
 
   ]
-
 
 
   return (

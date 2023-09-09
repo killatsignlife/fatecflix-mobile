@@ -26,43 +26,37 @@ export default Secao;
 
 const styles = StyleSheet.create({
     containerInfo: {
-        marginVertical: 16,
+        marginVertical: 8,
         marginHorizontal: 24,
         backgroundColor: "#FAF7F5",
         borderRadius: 8,
-        padding: 6,
+        padding: 4,
     },
     nomeSecao: {
         color: "#231d19",
-        marginHorizontal: 24,
-        marginTop: 8,
-        fontSize: 18,
+        marginLeft: 26,
+        marginTop: 4,
+        fontSize: 16,
+        fontWeight: "bold",
     },
     texto: {
         fontSize: 16,
     },
     campo: {
         flexDirection: "row",
-        marginVertical: 4,
         justifyContent: "center",
     },
     nomeCampo: {
         fontWeight: "bold",
         fontSize: 14,
         textTransform: "uppercase",
-        backgroundColor: "#b9b4af",
-        borderTopLeftRadius: 16,
-        borderBottomLeftRadius: 16,
         width: 120,
-        padding: 6,
+        paddingVertical: 4,
     },
     conteudoCampo: {
-        padding: 6,
+        paddingVertical: 4,
         fontSize: 14,
-        backgroundColor: "#D6d0cc",
         width: 210,
-        borderTopRightRadius: 16,
-        borderBottomRightRadius: 16,
     }
 
 })
