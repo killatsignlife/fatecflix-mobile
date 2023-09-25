@@ -27,14 +27,14 @@ export default Secao;
 const styles = StyleSheet.create({
     containerInfo: {
         marginVertical: 8,
-        marginHorizontal: 24,
+        marginHorizontal: 0,
         backgroundColor: "#FAF7F5",
         borderRadius: 8,
         padding: 4,
     },
     nomeSecao: {
         color: "#231d19",
-        marginLeft: 26,
+        marginLeft: 16,
         marginTop: 4,
         fontSize: 16,
         fontWeight: "bold",
@@ -44,7 +44,8 @@ const styles = StyleSheet.create({
     },
     campo: {
         flexDirection: "row",
-        justifyContent: "center",
+        justifyContent: "flex-start",
+        paddingLeft: 12,
     },
     nomeCampo: {
         fontWeight: "bold",
