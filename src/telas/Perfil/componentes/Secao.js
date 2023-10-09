@@ -36,11 +36,11 @@ const styles = StyleSheet.create({
         color: "#231d19",
         marginLeft: 16,
         marginTop: 4,
-        fontSize: 16,
+        fontSize: 17,
         fontWeight: "bold",
     },
     texto: {
-        fontSize: 16,
+        fontSize: 17,
     },
     campo: {
         flexDirection: "row",

@@ -2,10 +2,10 @@ import { View, Text } from 'react-native'
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Home from '../telas/Home';
-import Curso from '../telas/Curso';
-import Perfil from '../telas/Perfil';
 import { Feather } from 'react-native-vector-icons'
+import CursoRotas from './CursoRotas';
+import HomeRotas from './HomeRotas';
+import PerfilRotas from './PerfilRotas';
 
 //https://feathericons.com/
 
@@ -32,9 +32,9 @@ export default function AppRotas() {
         },
         })}
         >
-            <Tab.Screen name="Home" component={Home} />
-            <Tab.Screen name="Curso" component={Curso} />
-            <Tab.Screen name="Perfil" component={Perfil} />
+            <Tab.Screen name="Home" component={HomeRotas} />
+            <Tab.Screen name="Curso" component={CursoRotas} />
+            <Tab.Screen name="Perfil" component={PerfilRotas} />
         </Tab.Navigator>
     </NavigationContainer>
   )

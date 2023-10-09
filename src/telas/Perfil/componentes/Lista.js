@@ -1,67 +1,43 @@
-import { StyleSheet, Text, View, FlatList } from 'react-native'
+import { StyleSheet, Text, View, FlatList, TouchableOpacity } from 'react-native'
 import React from 'react'
+import { lista } from '../../../mocks/perfil';
+import { Feather } from 'react-native-vector-icons'
 
-const DATA = [
-    {
-      id: 1,
-      title: 'Primeiro Item',
-    },
-    {
-      id: 2,
-      title: 'Segundo Item',
-    },
-    {
-      id: 4,
-      title: 'Quarto Item',
-    },
-    {
-      id: 5,
-      title: 'Quinto Item',
-    },
-    {
-      id: 6,
-      title: 'Sexto Item',
-    },
-    {
-      id: 7,
-      title: 'Sétimo Item',
-    },
-    {
-      id: 8,
-      title: 'Oitavo Item',
-    },
-    {
-      id: 9,
-      title: 'Nono Item',
-    },
-    {
-      id: 10,
-      title: 'Décimo Item',
-    },
-    {
-      id: 11,
-      title: 'Décimo primeiro Item',
-    },
-    {
-      id: 12,
-      title: 'Décimo segundo Item',
-    },
-  ];
+import { useNavigation } from '@react-navigation/native';
 
-const Lista = () => {
 
-const ListItem = ({ title }) => (
-    <View>
-        <Text>{title}</Text>
-    </View>
+const Lista = ({topo }) => {
+  const navigation = useNavigation();
+
+  function navegar(id){
+    if (id == 1) {
+        navigation.navigate('Editar dados pessoais');
+    } else if (id == 2) {
+        navigation.navigate('Editar dados academicos');
+    } else if (id == 3) {
+        navigation.navigate('Editar seguranca');
+    } else if (id == 4) {
+        navigation.navigate('Informar problema');
+    }
+  }
+
+const ListItem = ({ title, id, icon }) => (
+    <TouchableOpacity style={styles.containerItem} onPress={()=> navegar(id)}>
+        <View style={styles.containerNome}>
+          <Feather name={icon} size={22} color="black" />
+          <Text style={styles.textoItem}>{title}</Text>
+        </View>
+        <Feather name="chevron-right" size={32} color="black" />
+    </TouchableOpacity>
 );
 
   return (
-    <View>
+    <View style={styles.containerLista}>
     <FlatList
-        data={DATA}
-        renderItem={({item}) => <ListItem title={item.title} />}
+        data={lista}
+        renderItem={({item}) => <ListItem title={item.title} id={item.id} icon={item.icon}/>}
         keyExtractor={item => item.id}
+        ListHeaderComponent={topo}
     />
     </View>
   )
@@ -69,4 +45,28 @@ const ListItem = ({ title }) => (
 
 export default Lista
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  containerLista: {
+    backgroundColor: "white",
+  },
+  containerItem:{
+    backgroundColor: "rgba(214,208,204, 0.3)", 
+    height: 60,
+    marginVertical: 6,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignContent: "center",
+    alignItems: "center",
+    padding: 12
+  },
+  containerNome:{
+    flexDirection: "row",
+    alignContent: "center",
+    alignItems: "center",
+  },
+  textoItem: {
+    fontSize: 14,
+    marginLeft: 8,
+  }
+
+})
