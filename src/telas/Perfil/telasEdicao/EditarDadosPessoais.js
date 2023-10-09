@@ -6,7 +6,6 @@ const EditarDadosPessoais = () => {
 
   const [nome, setNome] = useState('Wilson Vendramel');
   const [nascimento, setNascimento] = useState('01/01/2000');
-  const [email, setEmail] = useState('vendramel@fatec.sp.gov.br');
   const [perfil, setPerfil] = useState('Aluno');
 
 
@@ -16,7 +15,7 @@ const EditarDadosPessoais = () => {
       <View style={styles.containerForm}>
 
       <View style={styles.containerCampo}>
-        <Text style={estilo.subtitulo}>Nome</Text>
+        <Text style={estilo.subtitulo}>Nome:</Text>
         <TextInput
                       style={styles.entrada}
                       value={nome}
@@ -25,7 +24,7 @@ const EditarDadosPessoais = () => {
       </View>
 
       <View style={styles.containerCampo}>
-        <Text style={estilo.subtitulo}>Data de Nascimento</Text>
+        <Text style={estilo.subtitulo}>Data de Nascimento:</Text>
         <TextInput
                       style={styles.entrada}
                       value={nascimento}
@@ -34,16 +33,7 @@ const EditarDadosPessoais = () => {
       </View>
 
       <View style={styles.containerCampo}>
-        <Text style={estilo.subtitulo}>e-mail</Text>
-        <TextInput
-                      style={styles.entrada}
-                      value={email}
-                      onChangeText={setEmail}
-                  />
-      </View>
-
-      <View style={styles.containerCampo}>
-        <Text style={estilo.subtitulo}>Perfil</Text>
+        <Text style={estilo.subtitulo}>Perfil:</Text>
         <TextInput
                       style={styles.entrada}
                       value={perfil}
@@ -88,6 +78,7 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     height: 44,
     width: '96%',
+    marginTop: 4
 },
 botao: {
   backgroundColor: '#000',

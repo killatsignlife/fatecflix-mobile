@@ -2,17 +2,17 @@ import { StyleSheet } from "react-native";
 
 export default estilo = StyleSheet.create({
     texto: {
-        fontSize: 17
+        fontSize: 16
     },
     titulo: {
-        fontSize: 20, // 20, 22, 28
+        fontSize: 18, // 20, 22, 28
     },
     tituloGrande: {
         fontSize: 32,
         fontWeight: "bold",
     },
     subtitulo: {
-        fontSize: 17,
+        fontSize: 16,
         fontWeight: "bold",
     },
     container: {
