@@ -18,6 +18,8 @@ const InformarProblema = () => {
                       style={styles.entrada}
                       value={problema}
                       onChangeText={setProblema}
+                      multiline
+                      numberOfLines={8}
                   />
       </View>
 
@@ -56,7 +58,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     fontSize: 17,
     borderRadius: 8,
-    height: 200,
     width: '96%',
     marginTop: 4
 },
