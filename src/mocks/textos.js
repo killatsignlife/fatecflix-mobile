@@ -13,22 +13,6 @@ const usuario = {
     ra: 100100200,
     username: "@isamendes"
 }
-
-const curso = {
-    cursoId: 1,
-    titulo: "Introdução ao Typescript",
-    descricao: 
-        "O curso de Typescript para iniciantes tem como objetivo proporcionar aos " +
-        "estudantes uma compreensão clara e profunda dos conceitos fundamentais " + 
-        "dessa linguagem de programação. Durante o curso, serão abordados desde " +
-        "os conceitos básicos, como tipos de dados, interfaces, classes e funções, "+
-        "até tópicos mais avançados, como generics, decorators e namespaces.",
-    cargaHoraria: "20 horas",
-    dataAtualizacao: "15/08/2023",
-    mediaAvaliacao: "0",
-    categoria: "Frontend",
-}
-
 const aula = {
     aulaId: 1,
     titulo: "Introdução",
