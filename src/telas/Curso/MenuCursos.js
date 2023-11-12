@@ -1,34 +1,32 @@
-import { StyleSheet, Text, View, ScrollView, TouchableOpacity } from 'react-native'
+import { StyleSheet, Text, View, ScrollView, TouchableOpacity, Image } from 'react-native'
 import React from 'react'
-import Imagem from '../../../assets/imagens/menu.svg'
+import logo from '../../../assets/imagens/fatecflix_logo.png'
 import { listaCursos } from '../../mocks/cursos'
-import { lista } from '../../mocks/perfil'
-//<Imagem width={220} height={220} />
 
 const categoriasCursos = ["Desenvolvimento de Software", "Matemática", "Negócios", "Química"]
 
 const Topo = () => {
   return (
-    <View style={styles.container}>
-      <Text style={styles.imagem}>Logo</Text>
+    <View style={styles.containerTopo}>
+      <Image source={logo} style={styles.logoImagem} />
     </View>
   )
 }
 
 const Categoria = () => {
   return (
-    <>
+    <View style={styles.containerCategorias}>
       {
-        categoriasCursos.map((item) => {
+        categoriasCursos.map((item, index) => {
           return (
-            <View style={styles.categoriaContainer} key={item.id}>
-              <Text>{item}</Text>
+            <View style={styles.categoriaContainer} key={index}>
+              <Text style={styles.textoCategoria}>{item}</Text>
               <ScrollView horizontal={true}>
                 {
                   listaCursos.map((curso) => {
                     if (curso.categoria == item) {
                       return (
-                        <CursoCard titulo={curso.titulo} descricao={curso.descricao} />
+                        <CursoCard key={curso.cursoId} titulo={curso.titulo} descricao={curso.descricao} />
                       )
                     }
                   })
@@ -39,7 +37,7 @@ const Categoria = () => {
         })
       }
 
-    </>
+    </View>
   )
 }
 
@@ -47,14 +45,13 @@ const CursoCard = ({ titulo, descricao }) => {
   return (
     <TouchableOpacity style={styles.cardContainer} >
       <Text>{titulo}</Text>
-      {/* <Text>{descricao}</Text> */}
     </TouchableOpacity>
   )
 }
 
 const MenuCursos = () => {
   return (
-    <ScrollView>
+    <ScrollView style={styles.container}>
       <Topo />
       <Categoria categoria />
     </ScrollView>
@@ -65,26 +62,45 @@ export default MenuCursos
 
 const styles = StyleSheet.create({
   container: {
-    alignItems: 'center'
+    backgroundColor: "#000",
+    paddingVertical: 4,
+    
   },
-  imagem: {
-    width: 200,
-    height: 200,
-    backgroundColor: "grey"
+  containerCategorias:{
+    paddingBottom:22
   },
   categoriaContainer: {
-    backgroundColor: "#fefee9",
+    backgroundColor: "#000",
     height: 200,
   },
+  textoCategoria:{
+    color: "#FFF",
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginLeft: 8
+  },
   cardContainer: {
-    backgroundColor: "grey",
+    backgroundColor: "#FFF",
     height: 160,
     width: 150,
     margin: 8,
     padding: 4,
     borderRadius: 12,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+  },
+  containerTopo:{
+    width: '100%',
+    alignItems: 'center',
+    backgroundColor: "#000",
+    paddingVertical: 12
+    
+  },
+  logoImagem: {
+    width: 220,
+    height: 58,
+    resizeMode: 'stretch',
+    borderRadius: 12,
   }
 })
 
