@@ -1,3 +1,20 @@
+import typescript from '../../assets/imagens/cursos/typescript.png'
+import css from '../../assets/imagens/cursos/css.png'
+import git from '../../assets/imagens/cursos/git.png'
+import javascript from '../../assets/imagens/cursos/javascript.png'
+import java from '../../assets/imagens/cursos/java.png'
+import logica from '../../assets/imagens/cursos/logica.jpg'
+import algebra from '../../assets/imagens/cursos/algebra.jpg'
+import matematica_basica from '../../assets/imagens/cursos/matematica_basica.jpg'
+import financeira from '../../assets/imagens/cursos/financeira.jpg'
+import pre_calculo from '../../assets/imagens/cursos/pre_calculo.jpg'
+import excel from '../../assets/imagens/cursos/excel.jpg'
+import bi from '../../assets/imagens/cursos/bi.jpg'
+import soft_skills from '../../assets/imagens/cursos/soft_skills.jpg'
+import entrevista from '../../assets/imagens/cursos/entrevista.jpg'
+import quimica from '../../assets/imagens/cursos/quimica.jpg'
+
+
 
 export const listaCursos = [
     {
@@ -13,6 +30,7 @@ export const listaCursos = [
         dataAtualizacao: "15/08/2023",
         mediaAvaliacao: "0",
         categoria: "Desenvolvimento de Software",
+        imagem: typescript,
     },
     {
         cursoId: 2,
@@ -30,6 +48,7 @@ export const listaCursos = [
         dataAtualizacao: "02/04/2023",
         mediaAvaliacao: "0",
         categoria: "Desenvolvimento de Software",
+        imagem: css,
     },
     {
         cursoId: 3,
@@ -46,6 +65,7 @@ export const listaCursos = [
         dataAtualizacao: "02/04/2023",
         mediaAvaliacao: "0",
         categoria: "Desenvolvimento de Software",
+        imagem: git,
     },
     {
         cursoId: 4,
@@ -61,6 +81,7 @@ export const listaCursos = [
         dataAtualizacao: "09/11/2023",
         mediaAvaliacao: "0",
         categoria: "Desenvolvimento de Software",
+        imagem: javascript,
     },
     {
         cursoId: 5,
@@ -76,6 +97,7 @@ export const listaCursos = [
         dataAtualizacao: "09/11/2023",
         mediaAvaliacao: "0",
         categoria: "Desenvolvimento de Software",
+        imagem: java,
     },
     {
         cursoId: 6,
@@ -91,6 +113,7 @@ export const listaCursos = [
         dataAtualizacao: "09/11/2023",
         mediaAvaliacao: "0",
         categoria: "Desenvolvimento de Software",
+        imagem: logica,
     },
     {
         cursoId: 7,
@@ -106,6 +129,7 @@ export const listaCursos = [
         dataAtualizacao: "09/11/2023",
         mediaAvaliacao: "0",
         categoria: "Matemática",
+        imagem: algebra,
     },
     {
         cursoId: 8,
@@ -121,6 +145,7 @@ export const listaCursos = [
         dataAtualizacao: "09/11/2023",
         mediaAvaliacao: "0",
         categoria: "Matemática",
+        imagem: matematica_basica,
     },
     {
         cursoId: 9,
@@ -136,6 +161,7 @@ export const listaCursos = [
         dataAtualizacao: "09/11/2023",
         mediaAvaliacao: "0",
         categoria: "Matemática",
+        imagem: financeira,
     },
     {
         cursoId: 10,
@@ -151,6 +177,7 @@ export const listaCursos = [
         dataAtualizacao: "09/11/2023",
         mediaAvaliacao: "0",
         categoria: "Negócios",
+        imagem: excel,
     },
     {
         cursoId: 11,
@@ -166,6 +193,7 @@ export const listaCursos = [
         dataAtualizacao: "09/11/2023",
         mediaAvaliacao: "0",
         categoria: "Negócios",
+        imagem: bi,
     },
     {
         cursoId: 12,
@@ -181,6 +209,7 @@ export const listaCursos = [
         dataAtualizacao: "09/11/2023",
         mediaAvaliacao: "0",
         categoria: "Química",
+        imagem: quimica,
     },
     {
         cursoId: 13,
@@ -196,6 +225,7 @@ export const listaCursos = [
         dataAtualizacao: "09/11/2023",
         mediaAvaliacao: "0",
         categoria: "Negócios",
+        imagem: soft_skills,
     },
     {
         cursoId: 14,
@@ -211,6 +241,7 @@ export const listaCursos = [
         dataAtualizacao: "09/11/2023",
         mediaAvaliacao: "0",
         categoria: "Negócios",
+        imagem: entrevista,
     },  
     {
         cursoId: 15,
@@ -226,5 +257,6 @@ export const listaCursos = [
         dataAtualizacao: "09/11/2023",
         mediaAvaliacao: "0",
         categoria: "Matemática",
+        imagem: pre_calculo,
     },  
 ]

@@ -1,14 +1,15 @@
-import { StyleSheet, Text, View, ScrollView, TouchableOpacity, Image } from 'react-native'
+import { StyleSheet, Text, View, ScrollView, Image } from 'react-native'
 import React from 'react'
-import logo from '../../../assets/imagens/fatecflix_logo.png'
-import { listaCursos } from '../../mocks/cursos'
+import { listaCursos } from '../../../mocks/cursos'
+import CursoCard from './CursoCard'
+import logoTipo from '../../../../assets/imagens/fatecflix.png'
 
 const categoriasCursos = ["Desenvolvimento de Software", "Matemática", "Negócios", "Química"]
 
 const Topo = () => {
   return (
     <View style={styles.containerTopo}>
-      <Image source={logo} style={styles.logoImagem} />
+      <Image source={logoTipo} style={styles.logoImagem} />
     </View>
   )
 }
@@ -26,7 +27,7 @@ const Categoria = () => {
                   listaCursos.map((curso) => {
                     if (curso.categoria == item) {
                       return (
-                        <CursoCard key={curso.cursoId} titulo={curso.titulo} descricao={curso.descricao} />
+                        <CursoCard key={curso.cursoId} titulo={curso.titulo} descricao={curso.descricao} imagem={curso.imagem}/>
                       )
                     }
                   })
@@ -41,17 +42,10 @@ const Categoria = () => {
   )
 }
 
-const CursoCard = ({ titulo, descricao }) => {
-  return (
-    <TouchableOpacity style={styles.cardContainer} >
-      <Text>{titulo}</Text>
-    </TouchableOpacity>
-  )
-}
 
 const MenuCursos = () => {
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView style={styles.container}> 
       <Topo />
       <Categoria categoria />
     </ScrollView>
@@ -79,26 +73,14 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginLeft: 8
   },
-  cardContainer: {
-    backgroundColor: "#FFF",
-    height: 160,
-    width: 150,
-    margin: 8,
-    padding: 4,
-    borderRadius: 12,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
   containerTopo:{
     width: '100%',
-    alignItems: 'center',
     backgroundColor: "#000",
     paddingVertical: 12
-    
   },
   logoImagem: {
-    width: 220,
-    height: 58,
+    width: 210,
+    height: 48,
     resizeMode: 'stretch',
     borderRadius: 12,
   }
