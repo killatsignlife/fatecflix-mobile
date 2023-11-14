@@ -1,4 +1,4 @@
-import { View, Text, StatusBar } from 'react-native'
+import { View, StyleSheet, StatusBar, Image } from 'react-native'
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -6,6 +6,7 @@ import { Feather } from 'react-native-vector-icons'
 import CursoRotas from './CursoRotas';
 import HomeRotas from './HomeRotas';
 import PerfilRotas from './PerfilRotas';
+import logoTipo from '../../assets/imagens/fatecflix.png'
 
 //https://feathericons.com/
 
@@ -19,6 +20,7 @@ export default function AppRotas() {
           headerShown: true,
           tabBarActiveTintColor: '#ff0534',
           tabBarInactiveTintColor: 'white',
+          headerTitle: ()=> <Header />,
           tabBarLabelStyle: {
             fontSize: 12,
           },
@@ -27,11 +29,12 @@ export default function AppRotas() {
             borderTopWidth: 0,
           },
           headerStyle: {
-            backgroundColor: "black",
+            //backgroundColor: "black",
             borderBottomWidth: 0,
+            height: 100,
           },
-          headerTintColor: '#fff',
-          //headerTransparent: true,
+          //headerTintColor: '#fff',
+          headerTransparent: true,
           tabBarIcon: ({ color }) => {
             if (route.name === 'Home') {
               return <Feather name="home" size={18} color={color} />
@@ -50,3 +53,21 @@ export default function AppRotas() {
     </NavigationContainer>
   )
 }
+
+
+function Header() {
+  return(
+    <View>
+      <Image source={logoTipo} style={styles.logoImagem} />
+    </View>
+  )
+}
+
+const styles = StyleSheet.create({
+  logoImagem: {
+    width: 210,
+    height: 48,
+    resizeMode: 'stretch',
+    borderRadius: 12,
+  }
+})
