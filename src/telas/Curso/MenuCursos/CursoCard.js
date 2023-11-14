@@ -14,7 +14,7 @@ const CursoCard = ({ titulo, descricao , imagem, size}) => {
     return (
       <TouchableOpacity 
         style={[styles.cardContainer, { width: width, height: height }]}
-        onPress={() => navigation.navigate("Curso")}
+        onPress={() => navigation.navigate("ExibeCurso")}
       >
         <ImageBackground source={imagem} resizeMode="stretch" style={styles.backgroundImage}>
         <Text style={styles.textoCard}>{titulo}</Text>

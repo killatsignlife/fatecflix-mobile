@@ -8,7 +8,7 @@ export default function CursoRotas(){
     return (
         <Stack.Navigator screenOptions={{ headerShown: false}}>
           <Stack.Screen name="Principal" component={Curso} />
-          <Stack.Screen name="Curso" component={TelaCurso} />
+          <Stack.Screen name="ExibeCurso" component={TelaCurso} />
         </Stack.Navigator>
       );
 }
