@@ -29,10 +29,9 @@ const Categoria = () => {
                       return (
                         <CursoCard 
                           key={curso.cursoId} 
-                          titulo={curso.titulo} 
-                          descricao={curso.descricao} 
-                          imagem={curso.imagem} 
-                          size={curso.categoria === "Desenvolvimento de Software" ? "grande" : null}/>
+                          size={curso.categoria === "Desenvolvimento de Software" ? "grande" : null}
+                          {...curso}  
+                        />
                       )
                     }
                   })

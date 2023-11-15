@@ -3,7 +3,15 @@ import React from 'react'
 import { useNavigation } from '@react-navigation/native'
 
 
-const CursoCard = ({ titulo, descricao , imagem, size}) => {  
+const CursoCard = (
+  { titulo, 
+    size, 
+    descricao , 
+    imagem, 
+    cargaHoraria, 
+    dataAtualizacao, 
+    mediaAvaliacao  
+  }) => {  
 
   const navigation = useNavigation()
 
@@ -14,7 +22,8 @@ const CursoCard = ({ titulo, descricao , imagem, size}) => {
     return (
       <TouchableOpacity 
         style={[styles.cardContainer, { width: width, height: height }]}
-        onPress={() => navigation.navigate("ExibeCurso")}
+        onPress={() => navigation.navigate("ExibeCurso", 
+        { imagem, titulo, descricao, cargaHoraria, dataAtualizacao, mediaAvaliacao })}
       >
         <ImageBackground source={imagem} resizeMode="stretch" style={styles.backgroundImage}>
         <Text style={styles.textoCard}>{titulo}</Text>

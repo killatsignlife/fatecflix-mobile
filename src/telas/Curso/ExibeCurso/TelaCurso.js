@@ -1,18 +1,35 @@
 import { StyleSheet, Text, View, ScrollView, StatusBar, TouchableOpacity, Image } from 'react-native'
 import React from 'react'
 import Ionicons from 'react-native-vector-icons/Ionicons'
-import imagem from '../../../../assets/imagens/cursos/algebra.jpg'
+import imagemGenerica from '../../../../assets/imagens/cursos/algebra.jpg'
 import { Feather } from 'react-native-vector-icons'
 import Descricao from './componentes/Descricao'
 import ListaAulas from './componentes/ListaAulas'
 import ListaExercicios from './componentes/ListaExercicios'
+import { useRoute } from '@react-navigation/native'
 
 const TelaCurso = () => {
+    const route = useRoute();
+    const { 
+        imagem, 
+        titulo, 
+        descricao, 
+        cargaHoraria, 
+        dataAtualizacao, 
+        mediaAvaliacao 
+    } = route.params;   
+
     return (
         <View style={styles.container}>
             <ScrollView>
-                <Header />
-                <Descricao />
+                <Header 
+                    imagem={imagem} 
+                    titulo={titulo}
+                    mediaAvaliacao={mediaAvaliacao}
+                    dataAtualizacao={dataAtualizacao}
+                    cargaHoraria={cargaHoraria}
+                />
+                <Descricao texto={descricao}/>
                 <ListaAulas />
                 <ListaExercicios />
             </ScrollView>
@@ -21,7 +38,8 @@ const TelaCurso = () => {
 }
 
 
-function Header() {
+function Header({ imagem, titulo, mediaAvaliacao, dataAtualizacao, cargaHoraria}) {
+    
     return (
         <View style={styles.headerContainer}>
             <TouchableOpacity style={styles.botaoFavoritar}>
@@ -31,19 +49,19 @@ function Header() {
                 <Image source={imagem} style={styles.informacoesImagem} resizeMode="stretch" />
                 <View tyle={styles.informacoesTextoContainer}>
                     <View style={styles.campoTitulo}>
-                        <Text style={styles.textoTitulo}>Matemática Básica</Text>
+                        <Text style={styles.textoTitulo}>{titulo}</Text>
                     </View>
                     <View style={styles.campo}>
                         <Ionicons name="star-half-outline" size={22} color="black" />
-                        <Text style={styles.texto}>5/5</Text>
+                        <Text style={styles.texto}>{mediaAvaliacao}/5</Text>
                     </View>
                     <View style={styles.campo}>
                         <Feather name="edit-3" size={22} color="black" />
-                        <Text style={styles.texto}>10/10/2023</Text>
+                        <Text style={styles.texto}>{dataAtualizacao}</Text>
                     </View>
                     <View style={styles.campo}>
                         <Ionicons name="timer-outline" size={22} color="black" />
-                        <Text style={styles.texto}>20 horas</Text>
+                        <Text style={styles.texto}>{cargaHoraria}</Text>
                     </View>
                 </View>
             </View>
@@ -66,8 +84,8 @@ const styles = StyleSheet.create({
         marginLeft: 16,
     },
     textoTitulo: {
-        fontSize: 22,
-        fontWeight: "bold"
+        fontSize: 19,
+        fontWeight: "bold",
     },
     headerContainer: {
         backgroundColor: "white",
@@ -109,9 +127,9 @@ const styles = StyleSheet.create({
         width: "80%"
     },
     campoTitulo: {
-        height: 70,
+        minHeight: 70,
         marginLeft: 10,
-        width: "80%"
+        width: "70%"
     }
 
 
