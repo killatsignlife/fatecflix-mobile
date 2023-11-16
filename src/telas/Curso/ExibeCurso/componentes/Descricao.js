@@ -14,7 +14,7 @@ export default Descricao
 
 const styles = StyleSheet.create({
     container:{
-        backgroundColor: "orange",
+        backgroundColor: "white",
         minHeightheight: 200,
         padding: 16
     },

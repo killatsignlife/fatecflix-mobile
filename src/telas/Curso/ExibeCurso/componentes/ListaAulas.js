@@ -1,11 +1,21 @@
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, FlatList } from 'react-native'
 import React from 'react'
 
-const ListaAulas = () => {
+const ListaAulas = ( { aulas } ) => {
+
+  function obterLista(){
+    return aulas.map((aula) => {
+      return (
+        <View key={aula.aula_id} style={styles.containerAula}>
+          <Text style={styles.textoAulaTitulo}>{aula.titulo}</Text>
+        </View>
+      )
+    })
+  }
   return (
     <View style={styles.container}>
-        <Text style={styles.textoTitulo}>Lista de Aulas</Text>
-        <Text style={styles.texto}>Lista</Text>
+      <Text style={styles.textoTitulo}>Aulas do curso</Text>
+       {obterLista()}
     </View>
   )
 }
@@ -14,17 +24,27 @@ export default ListaAulas
 
 const styles = StyleSheet.create({
     container:{
-        backgroundColor: "purple",
-        height: 200,
+        backgroundColor: "white",
+        minHeight: 200,
         padding: 16
     },
     textoTitulo: {
       fontSize: 18,
-      fontWeight: "bold"
+      fontWeight: "bold",
+      marginBottom: 8
     },
     texto: {
        paddingTop: 4, 
        fontSize: 14,
        textAlign: "justify"
+    },
+    containerAula:{
+      height: 40,
+      marginVertical: 2,
+    },
+    textoAulaTitulo: {
+      fontSize: 16,
+      color: "black",
     }
+
 })

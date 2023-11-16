@@ -1,4 +1,4 @@
-import { StyleSheet, View, Image, Text, ScrollView } from 'react-native'
+import { StyleSheet, View, Image, Text, StatusBar } from 'react-native'
 import React from 'react'
 import Secao from './componentes/Secao';
 import { dadosPessoais, dadosAcademicos} from '../../mocks/perfil';
@@ -14,7 +14,9 @@ const Topo = () => {
         </View>
         <Secao titulo="Dados Pessoais" campos={dadosPessoais} />
         <Secao titulo="Dados Acadêmicos" campos={dadosAcademicos} />
-        <Text style={styles.textoEditar}>Editar Informações</Text>
+        <View style={styles.containerEditar}>
+          <Text style={styles.textoEditar}>Editar Informações</Text>
+        </View>
       </View>
   )
 }
@@ -31,8 +33,9 @@ export default Perfil;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "rgba(214,208,204, 0.3)",
-    flex: 1
+    backgroundColor: "black",
+    flex: 1,
+    paddingTop: StatusBar.currentHeight + 80,
   },
   containerFoto: {
     backgroundColor: "#FAF7F5",
@@ -64,6 +67,9 @@ const styles = StyleSheet.create({
     fontSize: 17,
     fontWeight: "bold",
     color: "#231d19",
+  },
+  containerEditar: {
+    backgroundColor: "rgb(214,208,204)",
   }
 })
 

@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, TextInput, TouchableOpacity, Alert } from 'react-native'
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, Alert, StatusBar } from 'react-native'
 import React, { useState } from 'react'
 import estilo from '../../../global/estilo'
 
@@ -68,6 +68,9 @@ const EditarDadosAcademicos = () => {
 export default EditarDadosAcademicos;
 
 const styles = StyleSheet.create({
+  container:{
+    paddingTop: StatusBar.currentHeight + 240,
+  },
   containerForm:{
     backgroundColor: '#fff',
     padding: 12,

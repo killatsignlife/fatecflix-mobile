@@ -29,11 +29,9 @@ export default function AppRotas() {
             borderTopWidth: 0,
           },
           headerStyle: {
-            //backgroundColor: "black",
             borderBottomWidth: 0,
             height: 100,
           },
-          //headerTintColor: '#fff',
           headerTransparent: true,
           tabBarIcon: ({ color }) => {
             if (route.name === 'Home') {

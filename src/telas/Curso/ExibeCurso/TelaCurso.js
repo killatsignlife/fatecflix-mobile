@@ -1,45 +1,43 @@
 import { StyleSheet, Text, View, ScrollView, StatusBar, TouchableOpacity, Image } from 'react-native'
 import React from 'react'
 import Ionicons from 'react-native-vector-icons/Ionicons'
-import imagemGenerica from '../../../../assets/imagens/cursos/algebra.jpg'
 import { Feather } from 'react-native-vector-icons'
 import Descricao from './componentes/Descricao'
 import ListaAulas from './componentes/ListaAulas'
-import ListaExercicios from './componentes/ListaExercicios'
 import { useRoute } from '@react-navigation/native'
 
 const TelaCurso = () => {
     const route = useRoute();
-    const { 
-        imagem, 
-        titulo, 
-        descricao, 
-        cargaHoraria, 
-        dataAtualizacao, 
-        mediaAvaliacao 
-    } = route.params;   
+    const {
+        imagem,
+        titulo,
+        descricao,
+        cargaHoraria,
+        dataAtualizacao,
+        mediaAvaliacao,
+        aulas,
+    } = route.params;
 
     return (
         <View style={styles.container}>
             <ScrollView>
-                <Header 
-                    imagem={imagem} 
+                <Header
+                    imagem={imagem}
                     titulo={titulo}
                     mediaAvaliacao={mediaAvaliacao}
                     dataAtualizacao={dataAtualizacao}
                     cargaHoraria={cargaHoraria}
                 />
-                <Descricao texto={descricao}/>
-                <ListaAulas />
-                <ListaExercicios />
+                <Descricao texto={descricao} />
+                <ListaAulas aulas={aulas}/>
             </ScrollView>
         </View>
     )
 }
 
 
-function Header({ imagem, titulo, mediaAvaliacao, dataAtualizacao, cargaHoraria}) {
-    
+function Header({ imagem, titulo, mediaAvaliacao, dataAtualizacao, cargaHoraria }) {
+
     return (
         <View style={styles.headerContainer}>
             <TouchableOpacity style={styles.botaoFavoritar}>

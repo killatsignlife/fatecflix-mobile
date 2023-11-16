@@ -10,7 +10,8 @@ const CursoCard = (
     imagem, 
     cargaHoraria, 
     dataAtualizacao, 
-    mediaAvaliacao  
+    mediaAvaliacao,
+    aulas  
   }) => {  
 
   const navigation = useNavigation()
@@ -23,7 +24,7 @@ const CursoCard = (
       <TouchableOpacity 
         style={[styles.cardContainer, { width: width, height: height }]}
         onPress={() => navigation.navigate("ExibeCurso", 
-        { imagem, titulo, descricao, cargaHoraria, dataAtualizacao, mediaAvaliacao })}
+        { imagem, titulo, descricao, cargaHoraria, dataAtualizacao, mediaAvaliacao, aulas })}
       >
         <ImageBackground source={imagem} resizeMode="stretch" style={styles.backgroundImage}>
         <Text style={styles.textoCard}>{titulo}</Text>

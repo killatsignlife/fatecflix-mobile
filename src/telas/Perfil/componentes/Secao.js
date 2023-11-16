@@ -12,12 +12,12 @@ const Secao = ({ titulo, campos }) => {
     })
 
     return (
-        <>
+        <View style={styles.container}>
             <Text style={styles.nomeSecao}>{titulo}</Text>
             <View style={styles.containerInfo} >
                 {listaDecampos}
             </View>
-        </>
+        </View>
     )
 }
 
@@ -25,6 +25,9 @@ export default Secao;
 
 
 const styles = StyleSheet.create({
+    container:{
+        backgroundColor: "rgb(214,208,204)",
+    },
     containerInfo: {
         marginVertical: 8,
         marginHorizontal: 0,

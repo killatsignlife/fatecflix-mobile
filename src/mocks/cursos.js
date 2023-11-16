@@ -31,6 +31,68 @@ export const listaCursos = [
         mediaAvaliacao: "0",
         categoria: "Desenvolvimento de Software",
         imagem: typescript,
+        aulas: [
+            {
+                aula_id: 1 ,
+                titulo: "Aula 01 - Introdução ao tema",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 2 ,
+                titulo: "Aula 02 - Ambientação",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 3 ,
+                titulo: "Aula 03 - Primeiros passsos",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 4 ,
+                titulo: "Aula 04 - Praticando",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 5 ,
+                titulo: "Aula 05 - Mais exemplos",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 6 ,
+                titulo: "Aula 06 - Boas práticas",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 7 ,
+                titulo: "Aula 07 - Tópicos avançados",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 8 ,
+                titulo: "Aula 08 - Praticando tópicos avançados",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 9 ,
+                titulo: "Aula 09 - Projeto",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 10 ,
+                titulo: "Aula 10 - Finalizando o projeto",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            }
+        ]
     },
     {
         cursoId: 2,
@@ -49,6 +111,68 @@ export const listaCursos = [
         mediaAvaliacao: "0",
         categoria: "Desenvolvimento de Software",
         imagem: css,
+        aulas: [
+            {
+                aula_id: 1 ,
+                titulo: "Aula 01 - Introdução ao tema",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 2 ,
+                titulo: "Aula 02 - Ambientação",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 3 ,
+                titulo: "Aula 03 - Primeiros passsos",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 4 ,
+                titulo: "Aula 04 - Praticando",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 5 ,
+                titulo: "Aula 05 - Mais exemplos",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 6 ,
+                titulo: "Aula 06 - Boas práticas",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 7 ,
+                titulo: "Aula 07 - Tópicos avançados",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 8 ,
+                titulo: "Aula 08 - Praticando tópicos avançados",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 9 ,
+                titulo: "Aula 09 - Projeto",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 10 ,
+                titulo: "Aula 10 - Finalizando o projeto",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            }
+        ]
     },
     {
         cursoId: 3,
@@ -66,6 +190,68 @@ export const listaCursos = [
         mediaAvaliacao: "0",
         categoria: "Desenvolvimento de Software",
         imagem: git,
+        aulas: [
+            {
+                aula_id: 1 ,
+                titulo: "Aula 01 - Introdução ao tema",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 2 ,
+                titulo: "Aula 02 - Ambientação",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 3 ,
+                titulo: "Aula 03 - Primeiros passsos",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 4 ,
+                titulo: "Aula 04 - Praticando",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 5 ,
+                titulo: "Aula 05 - Mais exemplos",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 6 ,
+                titulo: "Aula 06 - Boas práticas",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 7 ,
+                titulo: "Aula 07 - Tópicos avançados",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 8 ,
+                titulo: "Aula 08 - Praticando tópicos avançados",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 9 ,
+                titulo: "Aula 09 - Projeto",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 10 ,
+                titulo: "Aula 10 - Finalizando o projeto",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            }
+        ]
     },
     {
         cursoId: 4,
@@ -82,6 +268,68 @@ export const listaCursos = [
         mediaAvaliacao: "0",
         categoria: "Desenvolvimento de Software",
         imagem: javascript,
+        aulas: [
+            {
+                aula_id: 1 ,
+                titulo: "Aula 01 - Introdução ao tema",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 2 ,
+                titulo: "Aula 02 - Ambientação",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 3 ,
+                titulo: "Aula 03 - Primeiros passsos",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 4 ,
+                titulo: "Aula 04 - Praticando",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 5 ,
+                titulo: "Aula 05 - Mais exemplos",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 6 ,
+                titulo: "Aula 06 - Boas práticas",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 7 ,
+                titulo: "Aula 07 - Tópicos avançados",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 8 ,
+                titulo: "Aula 08 - Praticando tópicos avançados",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 9 ,
+                titulo: "Aula 09 - Projeto",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 10 ,
+                titulo: "Aula 10 - Finalizando o projeto",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            }
+        ]
     },
     {
         cursoId: 5,
@@ -98,6 +346,68 @@ export const listaCursos = [
         mediaAvaliacao: "0",
         categoria: "Desenvolvimento de Software",
         imagem: java,
+        aulas: [
+            {
+                aula_id: 1 ,
+                titulo: "Aula 01 - Introdução ao tema",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 2 ,
+                titulo: "Aula 02 - Ambientação",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 3 ,
+                titulo: "Aula 03 - Primeiros passsos",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 4 ,
+                titulo: "Aula 04 - Praticando",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 5 ,
+                titulo: "Aula 05 - Mais exemplos",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 6 ,
+                titulo: "Aula 06 - Boas práticas",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 7 ,
+                titulo: "Aula 07 - Tópicos avançados",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 8 ,
+                titulo: "Aula 08 - Praticando tópicos avançados",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 9 ,
+                titulo: "Aula 09 - Projeto",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 10 ,
+                titulo: "Aula 10 - Finalizando o projeto",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            }
+        ]
     },
     {
         cursoId: 6,
@@ -114,6 +424,68 @@ export const listaCursos = [
         mediaAvaliacao: "0",
         categoria: "Desenvolvimento de Software",
         imagem: logica,
+        aulas: [
+            {
+                aula_id: 1 ,
+                titulo: "Aula 01 - Introdução ao tema",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 2 ,
+                titulo: "Aula 02 - Ambientação",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 3 ,
+                titulo: "Aula 03 - Primeiros passsos",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 4 ,
+                titulo: "Aula 04 - Praticando",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 5 ,
+                titulo: "Aula 05 - Mais exemplos",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 6 ,
+                titulo: "Aula 06 - Boas práticas",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 7 ,
+                titulo: "Aula 07 - Tópicos avançados",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 8 ,
+                titulo: "Aula 08 - Praticando tópicos avançados",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 9 ,
+                titulo: "Aula 09 - Projeto",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 10 ,
+                titulo: "Aula 10 - Finalizando o projeto",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            }
+        ]
     },
     {
         cursoId: 7,
@@ -130,6 +502,68 @@ export const listaCursos = [
         mediaAvaliacao: "0",
         categoria: "Matemática",
         imagem: algebra,
+        aulas: [
+            {
+                aula_id: 1 ,
+                titulo: "Aula 01 - Introdução ao tema",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 2 ,
+                titulo: "Aula 02 - Ambientação",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 3 ,
+                titulo: "Aula 03 - Primeiros passsos",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 4 ,
+                titulo: "Aula 04 - Praticando",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 5 ,
+                titulo: "Aula 05 - Mais exemplos",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 6 ,
+                titulo: "Aula 06 - Boas práticas",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 7 ,
+                titulo: "Aula 07 - Tópicos avançados",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 8 ,
+                titulo: "Aula 08 - Praticando tópicos avançados",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 9 ,
+                titulo: "Aula 09 - Projeto",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 10 ,
+                titulo: "Aula 10 - Finalizando o projeto",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            }
+        ]
     },
     {
         cursoId: 8,
@@ -146,6 +580,68 @@ export const listaCursos = [
         mediaAvaliacao: "0",
         categoria: "Matemática",
         imagem: matematica_basica,
+        aulas: [
+            {
+                aula_id: 1 ,
+                titulo: "Aula 01 - Introdução ao tema",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 2 ,
+                titulo: "Aula 02 - Ambientação",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 3 ,
+                titulo: "Aula 03 - Primeiros passsos",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 4 ,
+                titulo: "Aula 04 - Praticando",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 5 ,
+                titulo: "Aula 05 - Mais exemplos",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 6 ,
+                titulo: "Aula 06 - Boas práticas",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 7 ,
+                titulo: "Aula 07 - Tópicos avançados",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 8 ,
+                titulo: "Aula 08 - Praticando tópicos avançados",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 9 ,
+                titulo: "Aula 09 - Projeto",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 10 ,
+                titulo: "Aula 10 - Finalizando o projeto",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            }
+        ]
     },
     {
         cursoId: 9,
@@ -162,6 +658,68 @@ export const listaCursos = [
         mediaAvaliacao: "0",
         categoria: "Matemática",
         imagem: financeira,
+        aulas: [
+            {
+                aula_id: 1 ,
+                titulo: "Aula 01 - Introdução ao tema",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 2 ,
+                titulo: "Aula 02 - Ambientação",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 3 ,
+                titulo: "Aula 03 - Primeiros passsos",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 4 ,
+                titulo: "Aula 04 - Praticando",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 5 ,
+                titulo: "Aula 05 - Mais exemplos",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 6 ,
+                titulo: "Aula 06 - Boas práticas",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 7 ,
+                titulo: "Aula 07 - Tópicos avançados",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 8 ,
+                titulo: "Aula 08 - Praticando tópicos avançados",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 9 ,
+                titulo: "Aula 09 - Projeto",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 10 ,
+                titulo: "Aula 10 - Finalizando o projeto",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            }
+        ]
     },
     {
         cursoId: 10,
@@ -178,6 +736,68 @@ export const listaCursos = [
         mediaAvaliacao: "0",
         categoria: "Negócios",
         imagem: excel,
+        aulas: [
+            {
+                aula_id: 1 ,
+                titulo: "Aula 01 - Introdução ao tema",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 2 ,
+                titulo: "Aula 02 - Ambientação",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 3 ,
+                titulo: "Aula 03 - Primeiros passsos",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 4 ,
+                titulo: "Aula 04 - Praticando",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 5 ,
+                titulo: "Aula 05 - Mais exemplos",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 6 ,
+                titulo: "Aula 06 - Boas práticas",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 7 ,
+                titulo: "Aula 07 - Tópicos avançados",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 8 ,
+                titulo: "Aula 08 - Praticando tópicos avançados",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 9 ,
+                titulo: "Aula 09 - Projeto",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 10 ,
+                titulo: "Aula 10 - Finalizando o projeto",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            }
+        ]
     },
     {
         cursoId: 11,
@@ -194,6 +814,68 @@ export const listaCursos = [
         mediaAvaliacao: "0",
         categoria: "Negócios",
         imagem: bi,
+        aulas: [
+            {
+                aula_id: 1 ,
+                titulo: "Aula 01 - Introdução ao tema",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 2 ,
+                titulo: "Aula 02 - Ambientação",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 3 ,
+                titulo: "Aula 03 - Primeiros passsos",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 4 ,
+                titulo: "Aula 04 - Praticando",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 5 ,
+                titulo: "Aula 05 - Mais exemplos",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 6 ,
+                titulo: "Aula 06 - Boas práticas",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 7 ,
+                titulo: "Aula 07 - Tópicos avançados",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 8 ,
+                titulo: "Aula 08 - Praticando tópicos avançados",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 9 ,
+                titulo: "Aula 09 - Projeto",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 10 ,
+                titulo: "Aula 10 - Finalizando o projeto",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            }
+        ]
     },
     {
         cursoId: 12,
@@ -210,6 +892,68 @@ export const listaCursos = [
         mediaAvaliacao: "0",
         categoria: "Química",
         imagem: quimica,
+        aulas: [
+            {
+                aula_id: 1 ,
+                titulo: "Aula 01 - Introdução ao tema",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 2 ,
+                titulo: "Aula 02 - Ambientação",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 3 ,
+                titulo: "Aula 03 - Primeiros passsos",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 4 ,
+                titulo: "Aula 04 - Praticando",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 5 ,
+                titulo: "Aula 05 - Mais exemplos",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 6 ,
+                titulo: "Aula 06 - Boas práticas",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 7 ,
+                titulo: "Aula 07 - Tópicos avançados",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 8 ,
+                titulo: "Aula 08 - Praticando tópicos avançados",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 9 ,
+                titulo: "Aula 09 - Projeto",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 10 ,
+                titulo: "Aula 10 - Finalizando o projeto",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            }
+        ]
     },
     {
         cursoId: 13,
@@ -226,6 +970,68 @@ export const listaCursos = [
         mediaAvaliacao: "0",
         categoria: "Negócios",
         imagem: soft_skills,
+        aulas: [
+            {
+                aula_id: 1 ,
+                titulo: "Aula 01 - Introdução ao tema",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 2 ,
+                titulo: "Aula 02 - Ambientação",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 3 ,
+                titulo: "Aula 03 - Primeiros passsos",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 4 ,
+                titulo: "Aula 04 - Praticando",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 5 ,
+                titulo: "Aula 05 - Mais exemplos",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 6 ,
+                titulo: "Aula 06 - Boas práticas",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 7 ,
+                titulo: "Aula 07 - Tópicos avançados",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 8 ,
+                titulo: "Aula 08 - Praticando tópicos avançados",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 9 ,
+                titulo: "Aula 09 - Projeto",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 10 ,
+                titulo: "Aula 10 - Finalizando o projeto",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            }
+        ]
     },
     {
         cursoId: 14,
@@ -242,6 +1048,68 @@ export const listaCursos = [
         mediaAvaliacao: "0",
         categoria: "Negócios",
         imagem: entrevista,
+        aulas: [
+            {
+                aula_id: 1 ,
+                titulo: "Aula 01 - Introdução ao tema",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 2 ,
+                titulo: "Aula 02 - Ambientação",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 3 ,
+                titulo: "Aula 03 - Primeiros passsos",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 4 ,
+                titulo: "Aula 04 - Praticando",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 5 ,
+                titulo: "Aula 05 - Mais exemplos",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 6 ,
+                titulo: "Aula 06 - Boas práticas",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 7 ,
+                titulo: "Aula 07 - Tópicos avançados",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 8 ,
+                titulo: "Aula 08 - Praticando tópicos avançados",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 9 ,
+                titulo: "Aula 09 - Projeto",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 10 ,
+                titulo: "Aula 10 - Finalizando o projeto",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            }
+        ]
     },  
     {
         cursoId: 15,
@@ -258,5 +1126,67 @@ export const listaCursos = [
         mediaAvaliacao: "0",
         categoria: "Matemática",
         imagem: pre_calculo,
+        aulas: [
+            {
+                aula_id: 1 ,
+                titulo: "Aula 01 - Introdução ao tema",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 2 ,
+                titulo: "Aula 02 - Ambientação",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 3 ,
+                titulo: "Aula 03 - Primeiros passsos",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 4 ,
+                titulo: "Aula 04 - Praticando",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 5 ,
+                titulo: "Aula 05 - Mais exemplos",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 6 ,
+                titulo: "Aula 06 - Boas práticas",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 7 ,
+                titulo: "Aula 07 - Tópicos avançados",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 8 ,
+                titulo: "Aula 08 - Praticando tópicos avançados",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 9 ,
+                titulo: "Aula 09 - Projeto",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            },
+            {
+                aula_id: 10 ,
+                titulo: "Aula 10 - Finalizando o projeto",
+                conteudo: "Conteúdo da Aula" , 
+                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            }
+        ]
     },  
 ]

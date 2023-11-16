@@ -1,11 +1,12 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, StatusBar } from "react-native";
 
 export default estilo = StyleSheet.create({
     texto: {
         fontSize: 16
     },
     titulo: {
-        fontSize: 18, // 20, 22, 28
+        fontSize: 18,
+        color: "white" // 20, 22, 28
     },
     tituloGrande: {
         fontSize: 32,
@@ -18,7 +19,10 @@ export default estilo = StyleSheet.create({
     container: {
         flex: 1,
         padding: 12,
+        paddingTop: StatusBar.currentHeight + 80,
+        backgroundColor: "black"
     },
+    
 
 });
 

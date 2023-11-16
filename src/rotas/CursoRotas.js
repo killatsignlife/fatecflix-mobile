@@ -6,9 +6,10 @@ const Stack = createStackNavigator();
 
 export default function CursoRotas(){
     return (
-        <Stack.Navigator screenOptions={{ headerShown: false}}>
+        <Stack.Navigator screenOptions={{headerShown: false }} >
           <Stack.Screen name="Principal" component={Curso} />
-          <Stack.Screen name="ExibeCurso" component={TelaCurso} />
+          <Stack.Screen name="ExibeCurso" component={TelaCurso} 
+            />
         </Stack.Navigator>
       );
 }
