@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, ScrollView, StatusBar, TouchableOpacity, Image } from 'react-native'
+import { StyleSheet, Text, View, ScrollView, StatusBar, TouchableOpacity, Image, Alert } from 'react-native'
 import React from 'react'
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import { Feather } from 'react-native-vector-icons'
@@ -29,18 +29,21 @@ const TelaCurso = () => {
                     cargaHoraria={cargaHoraria}
                 />
                 <Descricao texto={descricao} />
-                <ListaAulas aulas={aulas}/>
+                <ListaAulas aulas={aulas} />
             </ScrollView>
+            <BotaoMatricular />
         </View>
     )
 }
 
 
 function Header({ imagem, titulo, mediaAvaliacao, dataAtualizacao, cargaHoraria }) {
-
+    function favoritar() {
+        Alert.alert("Não implementado")
+    }
     return (
         <View style={styles.headerContainer}>
-            <TouchableOpacity style={styles.botaoFavoritar}>
+            <TouchableOpacity style={styles.botaoFavoritar} onPress={() => favoritar()}>
                 <Ionicons name="star-outline" size={18} color="white" />
             </TouchableOpacity>
             <View style={styles.informacoesContainer}>
@@ -66,6 +69,19 @@ function Header({ imagem, titulo, mediaAvaliacao, dataAtualizacao, cargaHoraria 
         </View>
     )
 }
+
+function BotaoMatricular() {
+    function matricular(cursoId) {
+        Alert.alert("Não implementado")
+    }
+    return (
+        <TouchableOpacity style={styles.botaoMatricular} onPress={() => matricular()}>
+            <Text style={styles.textoBotaoMatricular}>Matricular</Text>
+        </TouchableOpacity>
+    )
+}
+
+
 
 export default TelaCurso
 
@@ -128,6 +144,23 @@ const styles = StyleSheet.create({
         minHeight: 70,
         marginLeft: 10,
         width: "70%"
+    },
+    botaoMatricular: {
+        backgroundColor: "#ff0539",
+        width: 160,
+        height: 46,
+        borderRadius: 12,
+        justifyContent: "center",
+        alignItems: "center",
+        position: "absolute",
+        bottom: 32,
+        alignSelf: "center",
+    },
+    textoBotaoMatricular: {
+        fontSize: 18,
+        color: "white",
+        fontWeight: "bold",
+        textTransform: "uppercase",
     }
 
 

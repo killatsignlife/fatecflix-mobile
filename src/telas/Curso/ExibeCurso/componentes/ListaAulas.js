@@ -26,7 +26,8 @@ const styles = StyleSheet.create({
     container:{
         backgroundColor: "white",
         minHeight: 200,
-        padding: 16
+        paddingHorizontal: 16,
+        paddingBottom: 120,
     },
     textoTitulo: {
       fontSize: 18,
