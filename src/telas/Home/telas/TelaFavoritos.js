@@ -1,15 +1,57 @@
-import { StyleSheet, Text, View, StatusBar } from 'react-native'
+import { StyleSheet, Text, View, Image, StatusBar, Alert, TouchableOpacity, FlatList} from 'react-native'
 import React from 'react'
+import { Feather } from 'react-native-vector-icons'
+import { cursosFavoritos } from '../../../mocks/cursos'
 
-const TelaFavoritos = () => {
+const TelaCursosAndamento = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.texto}>TelaFavoritos</Text>
+      <FlatList
+        data={cursosFavoritos}
+        renderItem={({item}) => 
+          <ListItem  
+            titulo={item.titulo} 
+            modulos={item.modulos} 
+            aulas={item.aulas}
+            exercicios={item.exercicios}/>}
+        keyExtractor={item => item.id}
+        ListHeaderComponent={Topo}
+    />
     </View>
   )
 }
 
-export default TelaFavoritos
+
+const Topo = () => {
+  return(
+  <View style={styles.containerTopo}>
+    <Image style={styles.imagem} source={require('../../../../assets/imagens/vendramel.png')} />
+    <View style={styles.containerLinks}>
+          <Feather name="star" size={52} color="white" />
+          <Text style={styles.textoLink}>Favoritos</Text>
+  </View>
+</View>
+  )
+}
+
+const ListItem = ({ titulo, modulos, aulas, exercicios}) => {
+  return(
+    <TouchableOpacity style={styles.containerItem} onPress={() => Alert.alert("Não implementado")}>
+        <View style={styles.containerTitulo}>
+          <Text style={styles.textoTitulo}>{ titulo }</Text>
+        </View>
+        <View style={styles.containerResumo}>
+          <Text style={styles.textoItem}>{modulos} módulos</Text>
+          <Text style={styles.textoItem}>{aulas} aulas</Text>
+          <Text style={styles.textoItem}>{exercicios} exercícios</Text>
+        </View>
+    </TouchableOpacity>
+  )
+}
+
+
+
+export default TelaCursosAndamento
 
 const styles = StyleSheet.create({
   container: {
@@ -17,8 +59,50 @@ const styles = StyleSheet.create({
     backgroundColor: "black",
     paddingTop: StatusBar.currentHeight + 80,
   },
-  texto: {
-    fontSize: 24,
-    color: "white",
+  containerTopo: {
+    backgroundColor: "black",
+    minHeight: 250
+  },
+  containerLinks: {
+    height: 120,
+    width: "100%",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center"
+  },
+  textoLink:{
+    fontSize: 22,
+    marginLeft: 18,
+    color: "white"
+  },
+  imagem: {
+    width: 100,
+    height: 100,
+    borderRadius: 200 / 2,
+    alignSelf: "flex-end",
+    margin: 12
+  },
+  containerItem: {
+    backgroundColor: "white",
+    flexDirection: "row",
+    padding: 8,
+    justifyContent: "center",
+    height: 100,
+    borderWidth: 1,
+  },
+  containerResumo: {
+    justifyContent: "center",
+    alignItems: "flex-start"
+  },
+  containerTitulo:{
+    width:"60%",
+    justifyContent: "center",
+  },
+  textoTitulo:{
+    fontSize: 18,
+    fontWeight: "bold"
+  },
+  textoItem: {
+    fontSize: 14,
   }
 })

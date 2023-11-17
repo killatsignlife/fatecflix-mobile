@@ -1190,3 +1190,100 @@ export const listaCursos = [
         ]
     },  
 ]
+
+
+export const cursosAndamento = [
+    {
+        id: 1,
+        titulo: "Javascript",
+        progresso: 25,
+    },
+    {
+        id: 2,
+        titulo: "Preparação para entrevistas",
+        progresso: 60,
+    },
+    {
+        id: 3,
+        titulo: "Matemática Financeira",
+        progresso: 16,
+    },
+    {
+        id: 4,
+        titulo: "Typescript",
+        progresso: 50,
+    },
+    {
+        id: 5,
+        titulo: "Git e GitHub na vida real",
+        progresso: 90,
+    },
+    {
+        id: 6,
+        titulo: "Java",
+        progresso: 90,
+    },
+    {
+        id: 7,
+        titulo: "Excel",
+        progresso: 20,
+    }
+    
+    
+]
+
+export const cursoConquistas = [
+    {
+        id: 1,
+        titulo: "React",
+        sigla: "R",
+        data_finalizacao: "10/11/2023"
+    },
+    {
+        id: 2,
+        titulo: "Angular",
+        sigla: "A",
+        data_finalizacao: "10/10/2022"
+    },
+    {
+        id: 3,
+        titulo: "Comunicação Interpessoal",
+        sigla: "CI",
+        data_finalizacao: "09/09/2023"
+    },
+    {
+        id: 4,
+        titulo: "Canva",
+        sigla: "C",
+        data_finalizacao: "08/08/2023"
+    },
+    {
+        id: 5,
+        titulo: "Power BI",
+        sigla: "BI",
+        data_finalizacao: "20/04/2022"
+    },
+    {
+        id: 6,
+        titulo: "Spring Boot",
+        sigla: "SB",
+        data_finalizacao: "23/09/2023"
+    }
+]
+
+export const cursosFavoritos = [
+    {
+        id: 1,
+        titulo: "Excel",
+        modulos: 3,
+        aulas: 12,
+        exercicios: 5
+    },
+    {
+        id: 2,
+        titulo: "Desenvolvendo minhas soft skills",
+        modulos: 1,
+        aulas: 12,
+        exercicios: 12
+    }
+]

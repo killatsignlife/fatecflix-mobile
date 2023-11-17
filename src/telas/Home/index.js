@@ -31,6 +31,6 @@ const styles = StyleSheet.create({
     marginLeft: 16,
   },
   containerBanners:{
-    paddingBottom: 80
+    paddingBottom: 120
   }
 })
