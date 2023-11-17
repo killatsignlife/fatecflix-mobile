@@ -1,14 +1,50 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import { StyleSheet, Text, View, StatusBar, Button, Alert } from 'react-native'
 import ExibeComentarios from './componentes/ExibeComentarios'
 import ExibeTexto from './componentes/ExibeTexto'
 import ListaAulas from './componentes/ListaAulas'
 import ListaExercicios from './componentes/ListaExercicios'
+import ListaMateriais from './componentes/ListaMateriais'
+
+import React, { useState, useCallback, useRef } from "react";
+import YoutubePlayer from "react-native-youtube-iframe";
+import { ButtonGroup } from '@rneui/themed';
+
+
+
+
 
 const Aula = () => {
+  const [playing, setPlaying] = useState(false);
+
+  const onStateChange = useCallback((state) => {
+    if (state === "ended") {
+      setPlaying(false);
+      Alert.alert("video has finished playing!");
+    }
+  }, []);
+
+  const togglePlaying = useCallback(() => {
+    setPlaying((prev) => !prev);
+  }, []);
+  
   return (
-    <View>
-      <Text>index</Text>
+    <View style={styles.container}>
+      <YoutubePlayer
+        height={250}
+        width={"100%"}
+        play={playing}
+        videoId={"e41QFmkqaEY"}
+        onChangeState={onStateChange}
+      />
+      <Button title={playing ? "pause" : "play"} onPress={togglePlaying} />
+      <Text>Aula 01 - Introdução</Text>
+      <ButtonGroup 
+      buttons={[
+        "Textos",
+        "Aula",
+        "Exercícios",
+        "Comentários",
+      ]}/>
       <ExibeTexto />
       <ListaAulas />
       <ListaExercicios />
@@ -20,4 +56,12 @@ const Aula = () => {
 
 export default Aula
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  container: {
+    paddingTop: StatusBar.currentHeight + 32,
+  }
+})
+
+
+
+// https://lonelycpp.github.io/react-native-youtube-iframe/

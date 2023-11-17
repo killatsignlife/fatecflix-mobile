@@ -7,6 +7,7 @@ import CursoRotas from './CursoRotas';
 import HomeRotas from './HomeRotas';
 import PerfilRotas from './PerfilRotas';
 import logoTipo from '../../assets/imagens/fatecflix.png'
+import AulaRotas from './AulaRotas';
 
 //https://feathericons.com/
 
@@ -20,7 +21,13 @@ export default function AppRotas() {
           headerShown: true,
           tabBarActiveTintColor: '#ff0534',
           tabBarInactiveTintColor: 'white',
-          headerTitle: ()=> <Header />,
+          headerTitle: ()=>{
+            if (route.name === 'Home') return <Header />
+            if (route.name === 'Curso') return <Header />
+            if (route.name === 'Perfil') return <Header />
+            if (route.name === 'Aulas') return null
+          },
+            
           tabBarLabelStyle: {
             fontSize: 12,
           },
@@ -44,6 +51,7 @@ export default function AppRotas() {
           },
         })}
       >
+        <Tab.Screen name="Aulas" component={AulaRotas} />
         <Tab.Screen name="Home" component={HomeRotas} />
         <Tab.Screen name="Curso" component={CursoRotas} />
         <Tab.Screen name="Perfil" component={PerfilRotas} />
