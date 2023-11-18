@@ -3,7 +3,10 @@ import React from 'react'
 
 const ExibeComentarios = () => {
   return (
-    <View>
+    <View style={{ flex: 1}}>
+      <Text>ExibeComentarios</Text>
+      <Text>ExibeComentarios</Text>
+      <Text>ExibeComentarios</Text>
       <Text>ExibeComentarios</Text>
     </View>
   )

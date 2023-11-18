@@ -3,7 +3,7 @@ import React from 'react'
 
 const ListaAulas = () => {
   return (
-    <View>
+    <View style={{ flex: 1}}>
       <Text>ListaAulas</Text>
     </View>
   )

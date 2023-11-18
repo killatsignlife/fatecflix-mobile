@@ -3,7 +3,7 @@ import React from 'react'
 
 const ListaMateriais = () => {
   return (
-    <View>
+    <View style={{ flex: 1}}>
       <Text>ListaMateriais</Text>
     </View>
   )
