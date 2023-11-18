@@ -8,6 +8,7 @@ import ListaMateriais from './componentes/ListaMateriais'
 import React, { useState, useCallback, useRef } from "react";
 import YoutubePlayer from "react-native-youtube-iframe";
 import { ButtonGroup } from '@rneui/themed';
+import TabViewAulaContent from './componentes/TabViewAulaContent'
 
 
 
@@ -36,20 +37,16 @@ const Aula = () => {
         videoId={"e41QFmkqaEY"}
         onChangeState={onStateChange}
       />
-      <Button title={playing ? "pause" : "play"} onPress={togglePlaying} />
-      <Text>Aula 01 - Introdução</Text>
-      <ButtonGroup 
-      buttons={[
-        "Textos",
-        "Aula",
-        "Exercícios",
-        "Comentários",
-      ]}/>
-      <ExibeTexto />
-      <ListaAulas />
-      <ListaExercicios />
-      <ListaMateriais />
-      <ExibeComentarios />
+      <View style={{ 
+        marginBottom: 10,
+        justifyContent: 'center', 
+        alignItems: 'center'}}
+      >
+          <Text style={{
+            fontSize: 26,
+          }}>Aula 01 - Introdução</Text>
+      </View>
+      <TabViewAulaContent />
     </View>
   )
 }
@@ -58,6 +55,7 @@ export default Aula
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     paddingTop: StatusBar.currentHeight + 32,
   }
 })
