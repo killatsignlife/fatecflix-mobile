@@ -3,15 +3,21 @@ import React from 'react'
 import Header from './componentes/Header'
 import Banner from './componentes/Banner'
 
+import csharp from '../../../assets/imagens/csharp.jpeg'
+import java from '../../../assets/imagens/java.png'
+import javascript from '../../../assets/imagens/javascript.png'
+import python from '../../../assets/imagens/python.jpg'
+
+
 const Home = () => {
   return (
     <ScrollView style={styles.container}>
       <Header />
       <View style={styles.containerBanners}>
-        <Banner />
-        <Banner />
-        <Banner />
-        <Banner />
+        <Banner imageSrc={java} title='Faça java'/>
+        <Banner imageSrc={javascript} title="Javascript emergente"/>
+        <Banner imageSrc={csharp} title="Musica com C#"/>
+        <Banner imageSrc={python} title="A querida cobra Píton" />
       </View>
     </ScrollView>
   )
