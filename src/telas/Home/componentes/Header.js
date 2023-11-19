@@ -11,15 +11,15 @@ const Header = () => {
         <Image style={styles.imagem} source={require('../../../../assets/imagens/vendramel.png')} />
         <View style={styles.containerLinks}>
             <TouchableOpacity style={styles.containerItem} onPress={() => navigation.navigate("CursosAndamento")}>
-                <Feather name="play" size={32} color="black" />
+                <Feather name="play" size={32} color="white" />
                 <Text style={styles.textoLink}>Cursos em andamento</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.containerItem} onPress={() => navigation.navigate("Conquistas")}>
-                <Feather name="award" size={32} color="black" />
+                <Feather name="award" size={32} color="white" />
                 <Text style={styles.textoLink}>Conquistas</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.containerItem} onPress={() => navigation.navigate("Favoritos")}>
-                <Feather name="star" size={32} color="black" />
+                <Feather name="star" size={32} color="white" />
                 <Text style={styles.textoLink}>Favoritos</Text>
             </TouchableOpacity>
 
@@ -32,12 +32,12 @@ export default Header
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: "lightgrey",
+        backgroundColor: "lightcoral",
         minHeight: 250
     },
     texto: {
         fontSize: 32,
-        color: "black",
+        color: "white",
         marginLeft: 16,
     },
     imagem: {
@@ -61,6 +61,7 @@ const styles = StyleSheet.create({
     },
     textoLink:{
         fontSize: 13,
+        color: 'white'
     }
 
 })

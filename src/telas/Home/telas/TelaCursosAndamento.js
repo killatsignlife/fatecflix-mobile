@@ -23,7 +23,7 @@ const Topo = () => {
   <View style={styles.containerTopo}>
     <Image style={styles.imagem} source={require('../../../../assets/imagens/vendramel.png')} />
     <View style={styles.containerLinks}>
-          <Feather name="play" size={52} color="white" />
+          <Feather name="play" size={52} color="red" />
           <Text style={styles.textoLink}>Cursos em andamento</Text>
   </View>
 </View>
@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
   textoLink:{
     fontSize: 22,
     marginLeft: 18,
-    color: "white"
+    color: "red"
   },
   imagem: {
     width: 100,
@@ -100,5 +100,6 @@ const styles = StyleSheet.create({
   },
   textoItem: {
     fontSize: 16,
+    color: 'black',
   }
 })
