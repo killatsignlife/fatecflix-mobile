@@ -1,7 +1,7 @@
-import { View, Text, StyleSheet, FlatList } from 'react-native'
+import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
 
-const ListaAulas = ( { aulas } ) => {
+const ListaAulasCurso = ( { aulas } ) => {
 
   function obterLista(){
     return aulas.map((aula) => {
@@ -20,7 +20,7 @@ const ListaAulas = ( { aulas } ) => {
   )
 }
 
-export default ListaAulas
+export default ListaAulasCurso
 
 const styles = StyleSheet.create({
     container:{

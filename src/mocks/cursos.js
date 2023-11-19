@@ -92,6 +92,38 @@ export const listaCursos = [
                 conteudo: "Conteúdo da Aula" , 
                 video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
             }
+        ],
+        exercicios: [
+            {
+                id: 1,
+                titulo: "01 - Exercicio de Fixação",
+            },
+            {
+                id: 2,
+                titulo: "02 - Faça você mesmo ...",
+            },
+            {
+                id: 3,
+                titulo: "Teste de conhecimento",
+            },
+            {
+                id: 4,
+                titulo: "Desafio final",
+            }
+        ],
+        materiais:[
+            {
+                id: 1,
+                titulo: "Material 01 - Guia Federal de Requisitos e Obrigações de Segurança da Informação",
+                tipo: "PDF",
+                link: "https://www.gov.br/governodigital/pt-br/seguranca-e-protecao-de-dados/ppsi/guia_requisitos_obrigacoes.pdf"
+            },
+            {
+                id: 2,
+                titulo: "Material 02 - LGPD - Lei Geral de Proteção de Dados Pessoais",
+                tipo: "Link",
+                link: "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
+            }
         ]
     },
     {
@@ -172,6 +204,38 @@ export const listaCursos = [
                 conteudo: "Conteúdo da Aula" , 
                 video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
             }
+        ],
+        exercicios: [
+            {
+                id: 1,
+                titulo: "01 - Exercicio de Fixação",
+            },
+            {
+                id: 2,
+                titulo: "02 - Faça você mesmo ...",
+            },
+            {
+                id: 3,
+                titulo: "Teste de conhecimento",
+            },
+            {
+                id: 4,
+                titulo: "Desafio final",
+            }
+        ],
+        materiais:[
+            {
+                id: 1,
+                titulo: "Material 01 - Guia Federal de Requisitos e Obrigações de Segurança da Informação",
+                tipo: "PDF",
+                link: "https://www.gov.br/governodigital/pt-br/seguranca-e-protecao-de-dados/ppsi/guia_requisitos_obrigacoes.pdf"
+            },
+            {
+                id: 2,
+                titulo: "Material 02 - LGPD - Lei Geral de Proteção de Dados Pessoais",
+                tipo: "Link",
+                link: "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
+            }
         ]
     },
     {
@@ -251,6 +315,38 @@ export const listaCursos = [
                 conteudo: "Conteúdo da Aula" , 
                 video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
             }
+        ],
+        exercicios: [
+            {
+                id: 1,
+                titulo: "01 - Exercicio de Fixação",
+            },
+            {
+                id: 2,
+                titulo: "02 - Faça você mesmo ...",
+            },
+            {
+                id: 3,
+                titulo: "Teste de conhecimento",
+            },
+            {
+                id: 4,
+                titulo: "Desafio final",
+            }
+        ],
+        materiais:[
+            {
+                id: 1,
+                titulo: "Material 01 - Guia Federal de Requisitos e Obrigações de Segurança da Informação",
+                tipo: "PDF",
+                link: "https://www.gov.br/governodigital/pt-br/seguranca-e-protecao-de-dados/ppsi/guia_requisitos_obrigacoes.pdf"
+            },
+            {
+                id: 2,
+                titulo: "Material 02 - LGPD - Lei Geral de Proteção de Dados Pessoais",
+                tipo: "Link",
+                link: "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
+            }
         ]
     },
     {
@@ -328,6 +424,38 @@ export const listaCursos = [
                 titulo: "Aula 10 - Finalizando o projeto",
                 conteudo: "Conteúdo da Aula" , 
                 video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            }
+        ],
+        exercicios: [
+            {
+                id: 1,
+                titulo: "01 - Exercicio de Fixação",
+            },
+            {
+                id: 2,
+                titulo: "02 - Faça você mesmo ...",
+            },
+            {
+                id: 3,
+                titulo: "Teste de conhecimento",
+            },
+            {
+                id: 4,
+                titulo: "Desafio final",
+            }
+        ],
+        materiais:[
+            {
+                id: 1,
+                titulo: "Material 01 - Guia Federal de Requisitos e Obrigações de Segurança da Informação",
+                tipo: "PDF",
+                link: "https://www.gov.br/governodigital/pt-br/seguranca-e-protecao-de-dados/ppsi/guia_requisitos_obrigacoes.pdf"
+            },
+            {
+                id: 2,
+                titulo: "Material 02 - LGPD - Lei Geral de Proteção de Dados Pessoais",
+                tipo: "Link",
+                link: "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
             }
         ]
     },
@@ -407,7 +535,40 @@ export const listaCursos = [
                 conteudo: "Conteúdo da Aula" , 
                 video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
             }
+        ],
+        exercicios: [
+            {
+                id: 1,
+                titulo: "01 - Exercicio de Fixação",
+            },
+            {
+                id: 2,
+                titulo: "02 - Faça você mesmo ...",
+            },
+            {
+                id: 3,
+                titulo: "Teste de conhecimento",
+            },
+            {
+                id: 4,
+                titulo: "Desafio final",
+            }
+        ],
+        materiais:[
+            {
+                id: 1,
+                titulo: "Material 01 - Guia Federal de Requisitos e Obrigações de Segurança da Informação",
+                tipo: "PDF",
+                link: "https://www.gov.br/governodigital/pt-br/seguranca-e-protecao-de-dados/ppsi/guia_requisitos_obrigacoes.pdf"
+            },
+            {
+                id: 2,
+                titulo: "Material 02 - LGPD - Lei Geral de Proteção de Dados Pessoais",
+                tipo: "Link",
+                link: "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
+            }
         ]
+        
     },
     {
         cursoId: 6,
@@ -484,6 +645,38 @@ export const listaCursos = [
                 titulo: "Aula 10 - Finalizando o projeto",
                 conteudo: "Conteúdo da Aula" , 
                 video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            }
+        ],
+        exercicios: [
+            {
+                id: 1,
+                titulo: "01 - Exercicio de Fixação",
+            },
+            {
+                id: 2,
+                titulo: "02 - Faça você mesmo ...",
+            },
+            {
+                id: 3,
+                titulo: "Teste de conhecimento",
+            },
+            {
+                id: 4,
+                titulo: "Desafio final",
+            }
+        ],
+        materiais:[
+            {
+                id: 1,
+                titulo: "Material 01 - Guia Federal de Requisitos e Obrigações de Segurança da Informação",
+                tipo: "PDF",
+                link: "https://www.gov.br/governodigital/pt-br/seguranca-e-protecao-de-dados/ppsi/guia_requisitos_obrigacoes.pdf"
+            },
+            {
+                id: 2,
+                titulo: "Material 02 - LGPD - Lei Geral de Proteção de Dados Pessoais",
+                tipo: "Link",
+                link: "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
             }
         ]
     },
@@ -563,6 +756,38 @@ export const listaCursos = [
                 conteudo: "Conteúdo da Aula" , 
                 video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
             }
+        ],
+        exercicios: [
+            {
+                id: 1,
+                titulo: "01 - Exercicio de Fixação",
+            },
+            {
+                id: 2,
+                titulo: "02 - Faça você mesmo ...",
+            },
+            {
+                id: 3,
+                titulo: "Teste de conhecimento",
+            },
+            {
+                id: 4,
+                titulo: "Desafio final",
+            }
+        ],
+        materiais:[
+            {
+                id: 1,
+                titulo: "Material 01 - Guia Federal de Requisitos e Obrigações de Segurança da Informação",
+                tipo: "PDF",
+                link: "https://www.gov.br/governodigital/pt-br/seguranca-e-protecao-de-dados/ppsi/guia_requisitos_obrigacoes.pdf"
+            },
+            {
+                id: 2,
+                titulo: "Material 02 - LGPD - Lei Geral de Proteção de Dados Pessoais",
+                tipo: "Link",
+                link: "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
+            }
         ]
     },
     {
@@ -640,6 +865,38 @@ export const listaCursos = [
                 titulo: "Aula 10 - Finalizando o projeto",
                 conteudo: "Conteúdo da Aula" , 
                 video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            }
+        ],
+        exercicios: [
+            {
+                id: 1,
+                titulo: "01 - Exercicio de Fixação",
+            },
+            {
+                id: 2,
+                titulo: "02 - Faça você mesmo ...",
+            },
+            {
+                id: 3,
+                titulo: "Teste de conhecimento",
+            },
+            {
+                id: 4,
+                titulo: "Desafio final",
+            }
+        ],
+        materiais:[
+            {
+                id: 1,
+                titulo: "Material 01 - Guia Federal de Requisitos e Obrigações de Segurança da Informação",
+                tipo: "PDF",
+                link: "https://www.gov.br/governodigital/pt-br/seguranca-e-protecao-de-dados/ppsi/guia_requisitos_obrigacoes.pdf"
+            },
+            {
+                id: 2,
+                titulo: "Material 02 - LGPD - Lei Geral de Proteção de Dados Pessoais",
+                tipo: "Link",
+                link: "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
             }
         ]
     },
@@ -719,6 +976,38 @@ export const listaCursos = [
                 conteudo: "Conteúdo da Aula" , 
                 video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
             }
+        ],
+        exercicios: [
+            {
+                id: 1,
+                titulo: "01 - Exercicio de Fixação",
+            },
+            {
+                id: 2,
+                titulo: "02 - Faça você mesmo ...",
+            },
+            {
+                id: 3,
+                titulo: "Teste de conhecimento",
+            },
+            {
+                id: 4,
+                titulo: "Desafio final",
+            }
+        ],
+        materiais:[
+            {
+                id: 1,
+                titulo: "Material 01 - Guia Federal de Requisitos e Obrigações de Segurança da Informação",
+                tipo: "PDF",
+                link: "https://www.gov.br/governodigital/pt-br/seguranca-e-protecao-de-dados/ppsi/guia_requisitos_obrigacoes.pdf"
+            },
+            {
+                id: 2,
+                titulo: "Material 02 - LGPD - Lei Geral de Proteção de Dados Pessoais",
+                tipo: "Link",
+                link: "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
+            }
         ]
     },
     {
@@ -796,6 +1085,38 @@ export const listaCursos = [
                 titulo: "Aula 10 - Finalizando o projeto",
                 conteudo: "Conteúdo da Aula" , 
                 video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            }
+        ],
+        exercicios: [
+            {
+                id: 1,
+                titulo: "01 - Exercicio de Fixação",
+            },
+            {
+                id: 2,
+                titulo: "02 - Faça você mesmo ...",
+            },
+            {
+                id: 3,
+                titulo: "Teste de conhecimento",
+            },
+            {
+                id: 4,
+                titulo: "Desafio final",
+            }
+        ],
+        materiais:[
+            {
+                id: 1,
+                titulo: "Material 01 - Guia Federal de Requisitos e Obrigações de Segurança da Informação",
+                tipo: "PDF",
+                link: "https://www.gov.br/governodigital/pt-br/seguranca-e-protecao-de-dados/ppsi/guia_requisitos_obrigacoes.pdf"
+            },
+            {
+                id: 2,
+                titulo: "Material 02 - LGPD - Lei Geral de Proteção de Dados Pessoais",
+                tipo: "Link",
+                link: "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
             }
         ]
     },
@@ -875,6 +1196,38 @@ export const listaCursos = [
                 conteudo: "Conteúdo da Aula" , 
                 video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
             }
+        ],
+        exercicios: [
+            {
+                id: 1,
+                titulo: "01 - Exercicio de Fixação",
+            },
+            {
+                id: 2,
+                titulo: "02 - Faça você mesmo ...",
+            },
+            {
+                id: 3,
+                titulo: "Teste de conhecimento",
+            },
+            {
+                id: 4,
+                titulo: "Desafio final",
+            }
+        ],
+        materiais:[
+            {
+                id: 1,
+                titulo: "Material 01 - Guia Federal de Requisitos e Obrigações de Segurança da Informação",
+                tipo: "PDF",
+                link: "https://www.gov.br/governodigital/pt-br/seguranca-e-protecao-de-dados/ppsi/guia_requisitos_obrigacoes.pdf"
+            },
+            {
+                id: 2,
+                titulo: "Material 02 - LGPD - Lei Geral de Proteção de Dados Pessoais",
+                tipo: "Link",
+                link: "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
+            }
         ]
     },
     {
@@ -952,6 +1305,38 @@ export const listaCursos = [
                 titulo: "Aula 10 - Finalizando o projeto",
                 conteudo: "Conteúdo da Aula" , 
                 video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            }
+        ],
+        exercicios: [
+            {
+                id: 1,
+                titulo: "01 - Exercicio de Fixação",
+            },
+            {
+                id: 2,
+                titulo: "02 - Faça você mesmo ...",
+            },
+            {
+                id: 3,
+                titulo: "Teste de conhecimento",
+            },
+            {
+                id: 4,
+                titulo: "Desafio final",
+            }
+        ],
+        materiais:[
+            {
+                id: 1,
+                titulo: "Material 01 - Guia Federal de Requisitos e Obrigações de Segurança da Informação",
+                tipo: "PDF",
+                link: "https://www.gov.br/governodigital/pt-br/seguranca-e-protecao-de-dados/ppsi/guia_requisitos_obrigacoes.pdf"
+            },
+            {
+                id: 2,
+                titulo: "Material 02 - LGPD - Lei Geral de Proteção de Dados Pessoais",
+                tipo: "Link",
+                link: "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
             }
         ]
     },
@@ -1031,6 +1416,38 @@ export const listaCursos = [
                 conteudo: "Conteúdo da Aula" , 
                 video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
             }
+        ],
+        exercicios: [
+            {
+                id: 1,
+                titulo: "01 - Exercicio de Fixação",
+            },
+            {
+                id: 2,
+                titulo: "02 - Faça você mesmo ...",
+            },
+            {
+                id: 3,
+                titulo: "Teste de conhecimento",
+            },
+            {
+                id: 4,
+                titulo: "Desafio final",
+            }
+        ],
+        materiais:[
+            {
+                id: 1,
+                titulo: "Material 01 - Guia Federal de Requisitos e Obrigações de Segurança da Informação",
+                tipo: "PDF",
+                link: "https://www.gov.br/governodigital/pt-br/seguranca-e-protecao-de-dados/ppsi/guia_requisitos_obrigacoes.pdf"
+            },
+            {
+                id: 2,
+                titulo: "Material 02 - LGPD - Lei Geral de Proteção de Dados Pessoais",
+                tipo: "Link",
+                link: "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
+            }
         ]
     },
     {
@@ -1109,6 +1526,38 @@ export const listaCursos = [
                 conteudo: "Conteúdo da Aula" , 
                 video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
             }
+        ],
+        exercicios: [
+            {
+                id: 1,
+                titulo: "01 - Exercicio de Fixação",
+            },
+            {
+                id: 2,
+                titulo: "02 - Faça você mesmo ...",
+            },
+            {
+                id: 3,
+                titulo: "Teste de conhecimento",
+            },
+            {
+                id: 4,
+                titulo: "Desafio final",
+            }
+        ],
+        materiais:[
+            {
+                id: 1,
+                titulo: "Material 01 - Guia Federal de Requisitos e Obrigações de Segurança da Informação",
+                tipo: "PDF",
+                link: "https://www.gov.br/governodigital/pt-br/seguranca-e-protecao-de-dados/ppsi/guia_requisitos_obrigacoes.pdf"
+            },
+            {
+                id: 2,
+                titulo: "Material 02 - LGPD - Lei Geral de Proteção de Dados Pessoais",
+                tipo: "Link",
+                link: "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
+            }
         ]
     },  
     {
@@ -1186,6 +1635,38 @@ export const listaCursos = [
                 titulo: "Aula 10 - Finalizando o projeto",
                 conteudo: "Conteúdo da Aula" , 
                 video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+            }
+        ],
+        exercicios: [
+            {
+                id: 1,
+                titulo: "01 - Exercicio de Fixação",
+            },
+            {
+                id: 2,
+                titulo: "02 - Faça você mesmo ...",
+            },
+            {
+                id: 3,
+                titulo: "Teste de conhecimento",
+            },
+            {
+                id: 4,
+                titulo: "Desafio final",
+            }
+        ],
+        materiais:[
+            {
+                id: 1,
+                titulo: "Material 01 - Guia Federal de Requisitos e Obrigações de Segurança da Informação",
+                tipo: "PDF",
+                link: "https://www.gov.br/governodigital/pt-br/seguranca-e-protecao-de-dados/ppsi/guia_requisitos_obrigacoes.pdf"
+            },
+            {
+                id: 2,
+                titulo: "Material 02 - LGPD - Lei Geral de Proteção de Dados Pessoais",
+                tipo: "Link",
+                link: "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
             }
         ]
     },  

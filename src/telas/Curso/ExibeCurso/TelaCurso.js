@@ -3,7 +3,7 @@ import React from 'react'
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import { Feather } from 'react-native-vector-icons'
 import Descricao from './componentes/Descricao'
-import ListaAulas from './componentes/ListaAulas'
+import ListaAulasCurso from './componentes/ListaAulasCurso'
 import { useRoute } from '@react-navigation/native'
 
 const TelaCurso = () => {
@@ -29,7 +29,7 @@ const TelaCurso = () => {
                     cargaHoraria={cargaHoraria}
                 />
                 <Descricao texto={descricao} />
-                <ListaAulas aulas={aulas} />
+                <ListaAulasCurso aulas={aulas} />
             </ScrollView>
             <BotaoMatricular />
         </View>
