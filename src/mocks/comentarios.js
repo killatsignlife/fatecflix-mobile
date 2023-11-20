@@ -2,7 +2,7 @@ export const comentarios = [
   { 
     id: 1,
     name: 'brynn',
-    avatar: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/2048px-No_image_available.svg.png',
+    avatar: 'https://xsgames.co/randomusers/avatar.php?g=male',
     comment: 'Dmais!'
   },
   {
@@ -15,7 +15,7 @@ export const comentarios = [
   {
     id: 3,
     name: 'jsa',
-    avatar: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/2048px-No_image_available.svg.png',
+    avatar: 'https://xsgames.co/randomusers/avatar.php?g=female',
     comment: 'Dimais!'
   },
   {
@@ -27,7 +27,7 @@ export const comentarios = [
   {
     id: 5,
     name: 'andy vitale',
-    avatar: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/2048px-No_image_available.svg.png',
+    avatar: 'https://xsgames.co/randomusers/avatar.php?g=pixel',
     comment: '10 mais!'
   },
   {
@@ -36,5 +36,11 @@ export const comentarios = [
     avatar:
       'https://images-na.ssl-images-amazon.com/images/M/MV5BMTgxMTc1MTYzM15BMl5BanBnXkFtZTgwNzI5NjMwOTE@._V1_UY256_CR16,0,172,256_AL_.jpg',
     comment: '10+!'
+  },
+  {
+    id: 7,
+    name: 'Alan Nunes',
+    avatar: 'https://xsgames.co/randomusers/avatar.php?g=pixel',
+    comment: 'Que aula interessante!'
   },
 ];
