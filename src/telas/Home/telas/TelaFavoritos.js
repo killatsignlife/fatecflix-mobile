@@ -1,7 +1,6 @@
 import { StyleSheet, Text, View, Image, StatusBar, Alert, TouchableOpacity, FlatList} from 'react-native'
 import React, { useContext } from 'react'
 import { Feather } from 'react-native-vector-icons'
-import { cursosFavoritos } from '../../../mocks/cursos'
 
 import { CursosContext } from "../../../context/Cursos";
 

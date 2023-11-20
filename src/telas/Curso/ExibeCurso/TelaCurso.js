@@ -4,11 +4,10 @@ import Ionicons from 'react-native-vector-icons/Ionicons'
 import { Feather } from 'react-native-vector-icons'
 import Descricao from './componentes/Descricao'
 import ListaAulasCurso from './componentes/ListaAulasCurso'
-import { useRoute } from '@react-navigation/native'
+import { useNavigation, useRoute } from '@react-navigation/native'
 import { CursosContext } from "../../../context/Cursos";
 
 const TelaCurso = () => {
-
 
     const route = useRoute();
     const {
@@ -36,7 +35,7 @@ const TelaCurso = () => {
                 <Descricao texto={descricao} />
                 <ListaAulasCurso aulas={aulas} />
             </ScrollView>
-            <BotaoMatricular />
+            <Botao cursoId={cursoId} />
         </View>
     )
 }
@@ -44,11 +43,10 @@ const TelaCurso = () => {
 
 function Header({ imagem, titulo, mediaAvaliacao, dataAtualizacao, cargaHoraria, cursoId }) {
 
-
-
-    const { cursos, favoritos, setFavoritos } = useContext(CursosContext);
+    const { cursos, favoritos, setFavoritos, cursoMatriculados, setCursosMatriculados } = useContext(CursosContext);
 
     const [ehFavorito, setEhFavorito] = useState(false)
+
 
     function favoritar(id) {
         const curso = cursos.find(curso => curso.cursoId === id);
@@ -76,11 +74,11 @@ function Header({ imagem, titulo, mediaAvaliacao, dataAtualizacao, cargaHoraria,
         else setEhFavorito(false)
     }
 
+
+
     useEffect(() => {
         isFavorito(cursoId)
     }, [favoritos])
-
-
 
 
     return (
@@ -115,13 +113,62 @@ function Header({ imagem, titulo, mediaAvaliacao, dataAtualizacao, cargaHoraria,
     )
 }
 
-function BotaoMatricular() {
-    function matricular(cursoId) {
-        Alert.alert("Não implementado")
+
+function Botao({ cursoId }) {
+    const [ehMatriculado, setEhMatriculado] = useState(false)
+    const { cursos, cursoMatriculados, setCursosMatriculados } = useContext(CursosContext);
+    const navigation = useNavigation()
+
+    function matricular(id) {
+        const curso = cursos.find(curso => curso.cursoId === id);
+        const novaMatricula = {
+            id: cursoMatriculados.length + 1,
+            cursoId: curso.cursoId,
+            titulo: curso.titulo,
+            progresso: 0
+        };
+        setCursosMatriculados([...cursoMatriculados, novaMatricula]);
+        Alert.alert("Aluno matriculado com sucesso");
+
     }
+
+    function isMatriculado(id) {
+        if (cursoMatriculados.find(curso => curso.cursoId === id)) setEhMatriculado(true)
+        else setEhMatriculado(false)
+    }
+
+    function continuar(id) {
+        navigation.navigate("Aula", { id })
+    }
+
+    useEffect(() => {
+        isMatriculado(cursoId)
+    }, [cursoMatriculados])
+
+
     return (
-        <TouchableOpacity style={styles.botaoMatricular} onPress={() => matricular()}>
+        <>
+            {
+                ehMatriculado ? <BotaoContinuar continuar={continuar} cursoId={cursoId} /> : <BotaoMatricular matricular={matricular} cursoId={cursoId} />
+            }
+        </>
+    )
+}
+
+
+function BotaoMatricular({ matricular, cursoId }) {
+    return (
+        <TouchableOpacity style={styles.botaoMatricular} onPress={() => matricular(cursoId)}>
             <Text style={styles.textoBotaoMatricular}>Matricular</Text>
+        </TouchableOpacity>
+    )
+}
+
+function BotaoContinuar({ cursoId, continuar }) {
+    return (
+        <TouchableOpacity style={styles.botaoContinuar} onPress={() => continuar(cursoId)}>
+            <Text style={styles.textoBotaoContinuar}>Continuar</Text>
+            <Ionicons name="play-circle-outline" size={26} color="white" />
         </TouchableOpacity>
     )
 }
@@ -206,6 +253,25 @@ const styles = StyleSheet.create({
         color: "white",
         fontWeight: "bold",
         textTransform: "uppercase",
+    },
+    botaoContinuar: {
+        backgroundColor: "#ff0539",
+        width: 180,
+        height: 46,
+        borderRadius: 12,
+        justifyContent: "center",
+        alignItems: "center",
+        position: "absolute",
+        bottom: 32,
+        alignSelf: "center",
+        flexDirection: "row",
+    },
+    textoBotaoContinuar: {
+        fontSize: 18,
+        color: "white",
+        fontWeight: "bold",
+        textTransform: "uppercase",
+        marginRight: 8
     }
 
 

@@ -1676,40 +1676,16 @@ export const listaCursos = [
 export const cursosAndamento = [
     {
         id: 1,
+        cursoId: 4,
         titulo: "Javascript",
         progresso: 25,
     },
     {
         id: 2,
+        cursoId: 14,
         titulo: "Preparação para entrevistas",
         progresso: 60,
-    },
-    {
-        id: 3,
-        titulo: "Matemática Financeira",
-        progresso: 16,
-    },
-    {
-        id: 4,
-        titulo: "Typescript",
-        progresso: 50,
-    },
-    {
-        id: 5,
-        titulo: "Git e GitHub na vida real",
-        progresso: 90,
-    },
-    {
-        id: 6,
-        titulo: "Java",
-        progresso: 90,
-    },
-    {
-        id: 7,
-        titulo: "Excel",
-        progresso: 20,
     }
-    
     
 ]
 
