@@ -8,6 +8,7 @@ import HomeRotas from './HomeRotas';
 import PerfilRotas from './PerfilRotas';
 import logoTipo from '../../assets/imagens/fatecflix.png'
 import AulaRotas from './AulaRotas';
+import { CursosProvider } from '../context/Cursos';
 
 //https://feathericons.com/
 
@@ -15,6 +16,7 @@ export default function AppRotas() {
   const Tab = createBottomTabNavigator();
   return (
     <NavigationContainer>
+      <CursosProvider>
       <StatusBar backgroundColor="black" barStyle={'light-content'} translucent={true} />
       <Tab.Navigator
         screenOptions={({ route }) => ({
@@ -56,6 +58,7 @@ export default function AppRotas() {
         <Tab.Screen name="Curso" component={CursoRotas} />
         <Tab.Screen name="Perfil" component={PerfilRotas} />
       </Tab.Navigator>
+      </CursosProvider>
     </NavigationContainer>
   )
 }

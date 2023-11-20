@@ -4,7 +4,8 @@ import { useNavigation } from '@react-navigation/native'
 
 
 const CursoCard = (
-  { titulo, 
+  { cursoId,
+    titulo, 
     size, 
     descricao , 
     imagem, 
@@ -24,7 +25,7 @@ const CursoCard = (
       <TouchableOpacity 
         style={[styles.cardContainer, { width: width, height: height }]}
         onPress={() => navigation.navigate("ExibeCurso", 
-        { imagem, titulo, descricao, cargaHoraria, dataAtualizacao, mediaAvaliacao, aulas })}
+        { cursoId, imagem, titulo, descricao, cargaHoraria, dataAtualizacao, mediaAvaliacao, aulas })}
       >
         <ImageBackground source={imagem} resizeMode="stretch" style={styles.backgroundImage}>
         <Text style={styles.textoCard}>{titulo}</Text>

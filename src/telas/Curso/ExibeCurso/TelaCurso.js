@@ -5,10 +5,14 @@ import { Feather } from 'react-native-vector-icons'
 import Descricao from './componentes/Descricao'
 import ListaAulasCurso from './componentes/ListaAulasCurso'
 import { useRoute } from '@react-navigation/native'
+import { CursosContext, useCursosContext } from "../../../context/Cursos";
 
 const TelaCurso = () => {
+    
+
     const route = useRoute();
     const {
+        cursoId,
         imagem,
         titulo,
         descricao,
@@ -27,6 +31,7 @@ const TelaCurso = () => {
                     mediaAvaliacao={mediaAvaliacao}
                     dataAtualizacao={dataAtualizacao}
                     cargaHoraria={cargaHoraria}
+                    cursoId={cursoId}
                 />
                 <Descricao texto={descricao} />
                 <ListaAulasCurso aulas={aulas} />
@@ -37,13 +42,18 @@ const TelaCurso = () => {
 }
 
 
-function Header({ imagem, titulo, mediaAvaliacao, dataAtualizacao, cargaHoraria }) {
-    function favoritar() {
+function Header({ imagem, titulo, mediaAvaliacao, dataAtualizacao, cargaHoraria, cursoId }) {
+
+    //const { favoritarCurso } = useCursosContext(CursosContext);
+
+    function favoritar(id) {
+        //favoritarCurso(id)
         Alert.alert("Não implementado")
     }
+    
     return (
         <View style={styles.headerContainer}>
-            <TouchableOpacity style={styles.botaoFavoritar} onPress={() => favoritar()}>
+            <TouchableOpacity style={styles.botaoFavoritar} onPress={() => favoritar(cursoId)}>
                 <Ionicons name="star-outline" size={18} color="white" />
             </TouchableOpacity>
             <View style={styles.informacoesContainer}>

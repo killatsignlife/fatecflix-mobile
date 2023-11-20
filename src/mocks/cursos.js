@@ -1755,6 +1755,7 @@ export const cursoConquistas = [
 export const cursosFavoritos = [
     {
         id: 1,
+        cursoId: 10,
         titulo: "Excel",
         modulos: 3,
         aulas: 12,
@@ -1762,9 +1763,10 @@ export const cursosFavoritos = [
     },
     {
         id: 2,
+        cursoId: 13,
         titulo: "Desenvolvendo minhas soft skills",
-        modulos: 1,
+        modulos: 3,
         aulas: 12,
-        exercicios: 12
+        exercicios: 5
     }
 ]
