@@ -2,17 +2,16 @@ import { StyleSheet, Text, View, Image, StatusBar, Alert, TouchableOpacity, Flat
 import React, { useContext } from 'react'
 import { Feather } from 'react-native-vector-icons'
 import { CursosContext } from "../../../context/Cursos";
-
+import { useNavigation } from '@react-navigation/native'
 
 const TelaCursosAndamento = () => {
-
   const { cursoMatriculados } = useContext(CursosContext);
 
   return (
     <View style={styles.container}>
       <FlatList
         data={cursoMatriculados}
-        renderItem={({item}) => <ListItem titulo={item.titulo} progresso={item.progresso}/>}
+        renderItem={({item}) => <ListItem titulo={item.titulo} progresso={item.progresso} cursoId={item.cursoId}/>}
         keyExtractor={item => item.id}
         ListHeaderComponent={Topo}
     />
@@ -33,9 +32,11 @@ const Topo = () => {
   )
 }
 
-const ListItem = ({ titulo, progresso}) => {
+const ListItem = ({ titulo, progresso, cursoId}) => {
+  const navigation = useNavigation()
+
   return(
-    <TouchableOpacity style={styles.containerItem} onPress={() => Alert.alert("Não implementado")}>
+    <TouchableOpacity style={styles.containerItem} onPress={() => navigation.navigate({ name: "Aula", params: { cursoId }} )}>
         <View style={styles.containerTitulo}>
           <Text style={styles.textoTitulo}>{ titulo }</Text>
         </View>

@@ -2,9 +2,9 @@ import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
 
 const ListaAulasCurso = ( { aulas } ) => {
-
+  console.log(aulas);
   function obterLista(){
-    return aulas.map((aula) => {
+    return aulas?.map((aula) => {
       return (
         <View key={aula.aula_id} style={styles.containerAula}>
           <Text style={styles.textoAulaTitulo}>{aula.titulo}</Text>
@@ -15,7 +15,7 @@ const ListaAulasCurso = ( { aulas } ) => {
   return (
     <View style={styles.container}>
       <Text style={styles.textoTitulo}>Aulas do curso</Text>
-       {obterLista()}
+       {aulas ? obterLista() : []}
     </View>
   )
 }

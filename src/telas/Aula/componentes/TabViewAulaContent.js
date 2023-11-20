@@ -9,27 +9,27 @@ import ListaExercicios from './ListaExercicios'
 import ExibeComentarios from "./ExibeComentarios"
 
 
-const RotaTextos = () => {
+const RotaTextos = (texto, titulo) => {
   return (
-    <ExibeTexto />
+    <ExibeTexto texto={texto} titulo={titulo} />
   )
 }
 
-const RotaAulas = () => {
+const RotaAulas = (aulas, id) => {
   return (
-    <ListaAulas />
+    <ListaAulas aulas={aulas} id={id}/>
   )
 }
 
-const RotaExercicios = () => {
+const RotaExercicios = (exercicios) => {
     return (
-      <ListaExercicios />
+      <ListaExercicios exercicios={exercicios} />
     )
 }
 
-const RotaMateriais = () => {
+const RotaMateriais = (materiais) => {
   return (
-    <ListaMateriais />
+    <ListaMateriais materiais={materiais} />
   )
 }
 
@@ -78,15 +78,16 @@ export default class TabViewAulaContent extends React.Component {
   }
 
   render() {
+    
     return (
       <TabView
         renderTabBar={renderTabBar}
         navigationState={this.state}
         renderScene={SceneMap({
-          textos: RotaTextos,
-          aulas: RotaAulas,
-          exercicios: RotaExercicios,
-          materiais: RotaMateriais,
+          textos: () => RotaTextos(this.props.textos, this.props.titulo),
+          aulas: () => RotaAulas(this.props.aulas, this.props.cursoId),
+          exercicios: () => RotaExercicios(this.props.exercicios),
+          materiais: () => RotaMateriais(this.props.materiais),
           comentarios: RotaComentarios,
         })}
         

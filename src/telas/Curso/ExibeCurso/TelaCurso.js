@@ -10,32 +10,23 @@ import { CursosContext } from "../../../context/Cursos";
 const TelaCurso = () => {
 
     const route = useRoute();
-    const {
-        cursoId,
-        imagem,
-        titulo,
-        descricao,
-        cargaHoraria,
-        dataAtualizacao,
-        mediaAvaliacao,
-        aulas,
-    } = route.params;
 
     return (
         <View style={styles.container}>
             <ScrollView>
                 <Header
-                    imagem={imagem}
-                    titulo={titulo}
-                    mediaAvaliacao={mediaAvaliacao}
-                    dataAtualizacao={dataAtualizacao}
-                    cargaHoraria={cargaHoraria}
-                    cursoId={cursoId}
+                    imagem={route.params?.imagem}
+                    titulo={route.params?.titulo}
+                    mediaAvaliacao={route.params?.mediaAvaliacao}
+                    dataAtualizacao={route.params?.dataAtualizacao}
+                    cargaHoraria={route.params?.cargaHoraria}
+                    cursoId={route.params?.cursoId}
+                    
                 />
-                <Descricao texto={descricao} />
-                <ListaAulasCurso aulas={aulas} />
+                <Descricao texto={route.params?.descricao} />
+                <ListaAulasCurso aulas={route.params?.aulas} />
             </ScrollView>
-            <Botao cursoId={cursoId} />
+            <Botao cursoId={route.params?.cursoId} />
         </View>
     )
 }
@@ -138,7 +129,7 @@ function Botao({ cursoId }) {
     }
 
     function continuar(id) {
-        navigation.navigate("Aula", { id })
+        navigation.navigate({ name: "Aula", params: { cursoId: id }} )
     }
 
     useEffect(() => {
@@ -165,6 +156,7 @@ function BotaoMatricular({ matricular, cursoId }) {
 }
 
 function BotaoContinuar({ cursoId, continuar }) {
+    console.log(cursoId)
     return (
         <TouchableOpacity style={styles.botaoContinuar} onPress={() => continuar(cursoId)}>
             <Text style={styles.textoBotaoContinuar}>Continuar</Text>

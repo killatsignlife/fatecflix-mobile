@@ -1,11 +1,12 @@
 import { StyleSheet, Text, View, Image, StatusBar, Alert, TouchableOpacity, FlatList} from 'react-native'
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Feather } from 'react-native-vector-icons'
-
+import { useNavigation } from '@react-navigation/native'
 import { CursosContext } from "../../../context/Cursos";
+import { listaCursos } from '../../../mocks/cursos';
 
 
-const TelaCursosAndamento = () => {
+const TelaFavoritos = () => {
 
   const { favoritos } = useContext(CursosContext);
 
@@ -15,10 +16,12 @@ const TelaCursosAndamento = () => {
         data={favoritos}
         renderItem={({item}) => 
           <ListItem  
-            titulo={item.titulo} 
-            modulos={item.modulos} 
-            aulas={item.aulas}
-            exercicios={item.exercicios}/>}
+            titulo={item?.titulo} 
+            modulos={item?.modulos} 
+            aulas={item?.aulas}
+            exercicios={item?.exercicios}
+            cursoId={item?.cursoId}
+          />}
         keyExtractor={item => item.id}
         ListHeaderComponent={Topo}
     />
@@ -39,9 +42,35 @@ const Topo = () => {
   )
 }
 
-const ListItem = ({ titulo, modulos, aulas, exercicios}) => {
+const ListItem = ({ cursoId, aulas, modulos, titulo, exercicios }) => {
+  const navigation = useNavigation()
+  const [cursos, setCursos ] = useState(listaCursos)
+  const [curso, setCurso ] = useState()
+  const getCursoById = () => {
+    cursos.forEach(c => {
+      if (c.cursoId === cursoId) {
+        setCurso(c)
+      }
+    })
+  }
+
+  useEffect(() => {
+    getCursoById() 
+  })
+
   return(
-    <TouchableOpacity style={styles.containerItem} onPress={() => Alert.alert("Não implementado")}>
+    <TouchableOpacity style={styles.containerItem} onPress={() => navigation.navigate({ 
+      name: "ExibeCurso",
+      params: { 
+        curso: curso.cursoId, 
+        imagem: curso.imagem, 
+        titulo: curso.titulo, 
+        descricao: curso.descricao, 
+        cargaHoraria: curso.cargaHoraria, 
+        dataAtualizacao: curso.dataAtualizacao, 
+        mediaAvaliacao: curso.mediaAvaliacao, 
+        aulas: curso.aulas
+      }})}>
         <View style={styles.containerTitulo}>
           <Text style={styles.textoTitulo}>{ titulo }</Text>
         </View>
@@ -56,7 +85,7 @@ const ListItem = ({ titulo, modulos, aulas, exercicios}) => {
 
 
 
-export default TelaCursosAndamento
+export default TelaFavoritos
 
 const styles = StyleSheet.create({
   container: {

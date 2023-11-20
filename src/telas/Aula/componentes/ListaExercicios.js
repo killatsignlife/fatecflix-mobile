@@ -4,12 +4,12 @@ import React from 'react'
 import { listaCursos } from '../../../mocks/cursos'
 import { Feather } from 'react-native-vector-icons'
 
-const exercicios = listaCursos[0].exercicios
 
-const ListaExercicios = () => {
+
+const ListaExercicios = ({ exercicios }) => {
 
   function obterLista() {
-    return exercicios.map((exercicio) => {
+    return exercicios?.map((exercicio) => {
       return (
         <TouchableOpacity
           key={exercicio.id}
