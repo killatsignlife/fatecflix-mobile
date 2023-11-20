@@ -24,6 +24,18 @@ const Aula = ({ route }) => {
       }
     })
   }
+
+  function findAulaUrl(id){
+    if(id === null) {
+      const aula = curso.aulas[0]?.video.replace('https://www.youtube.com/watch?v=', '')
+      return aula
+    } else {
+      
+    }
+
+    const aulaEncontrada = curso.find(curso => curso.aulaId == id)
+    return aulaEncontrada?.video.replace('https://www.youtube.com/watch?v=', '')
+  }
   
   useEffect(() => {
     findById()

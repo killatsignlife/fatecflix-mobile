@@ -14,7 +14,7 @@ const ListaAulas = ({ aulas, id }) => {
         <TouchableOpacity
           key={aula.aula_id}
           style={styles.containerAula}
-          onPress={() => navigation.navigate({ name: "Aula", params: { cursoId: id }})}
+          onPress={() => navigation.navigate({ name: "Aula", params: { cursoId: id, aulaId: aula.aula_id }})}
         >
           <Text style={styles.textoAulaTitulo}>{aula.titulo ? aula.titulo : 'Video desconhecido'}</Text>
           <Feather name="circle" size={22} color="black" />
