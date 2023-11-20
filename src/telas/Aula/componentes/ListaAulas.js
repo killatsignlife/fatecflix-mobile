@@ -2,22 +2,22 @@ import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Alert } from 'rea
 import React from 'react'
 import { listaCursos } from '../../../mocks/cursos'
 import { Feather } from 'react-native-vector-icons'
+import { useNavigation } from '@react-navigation/native'
 
-const aulas = listaCursos[0].aulas
 
-const ListaAulas = () => {
+const ListaAulas = ({ aulas, id }) => {
+  const navigation = useNavigation()
 
   function obterLista() {
-    return aulas.map((aula) => {
+    return aulas?.map((aula) => {
       return (
         <TouchableOpacity
           key={aula.aula_id}
           style={styles.containerAula}
-          onPress={() => Alert.alert("clicou na aula")}
+          onPress={() => navigation.navigate({ name: "Aula", params: { cursoId: id }})}
         >
-          <Text style={styles.textoAulaTitulo}>{aula.titulo}</Text>
+          <Text style={styles.textoAulaTitulo}>{aula.titulo ? aula.titulo : 'Video desconhecido'}</Text>
           <Feather name="circle" size={22} color="black" />
-          {/* <Feather name="check-circle" size={22} color="green" /> */}
         </TouchableOpacity>
       )
     })
@@ -26,7 +26,7 @@ const ListaAulas = () => {
     <View style={styles.container}>
       <ScrollView>
         <Text style={styles.textoTitulo}>Aulas do curso</Text>
-        {obterLista()}
+        {aulas ? obterLista() : []}
       </ScrollView>
     </View>
   )
