@@ -1,13 +1,19 @@
 import { StyleSheet, Text, View, Image, StatusBar, Alert, TouchableOpacity, FlatList} from 'react-native'
-import React from 'react'
+import React, { useContext } from 'react'
 import { Feather } from 'react-native-vector-icons'
 import { cursosFavoritos } from '../../../mocks/cursos'
 
+import { CursosContext } from "../../../context/Cursos";
+
+
 const TelaCursosAndamento = () => {
+
+  const { favoritos } = useContext(CursosContext);
+
   return (
     <View style={styles.container}>
       <FlatList
-        data={cursosFavoritos}
+        data={favoritos}
         renderItem={({item}) => 
           <ListItem  
             titulo={item.titulo} 

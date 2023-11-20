@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View, ScrollView, StatusBar, TouchableOpacity, Image, Alert } from 'react-native'
-import React from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import { Feather } from 'react-native-vector-icons'
 import Descricao from './componentes/Descricao'
 import ListaAulasCurso from './componentes/ListaAulasCurso'
 import { useRoute } from '@react-navigation/native'
-import { CursosContext, useCursosContext } from "../../../context/Cursos";
+import { CursosContext } from "../../../context/Cursos";
 
 const TelaCurso = () => {
-    
+
 
     const route = useRoute();
     const {
@@ -44,17 +44,52 @@ const TelaCurso = () => {
 
 function Header({ imagem, titulo, mediaAvaliacao, dataAtualizacao, cargaHoraria, cursoId }) {
 
-    //const { favoritarCurso } = useCursosContext(CursosContext);
+
+
+    const { cursos, favoritos, setFavoritos } = useContext(CursosContext);
+
+    const [ehFavorito, setEhFavorito] = useState(false)
 
     function favoritar(id) {
-        //favoritarCurso(id)
-        Alert.alert("Não implementado")
+        const curso = cursos.find(curso => curso.cursoId === id);
+        if (favoritos.find(favorito => favorito.cursoId === curso.cursoId)) {
+            const novosFavoritos = favoritos.filter(favorito => favorito.cursoId !== curso.cursoId);
+            setFavoritos(novosFavoritos);
+            Alert.alert("Curso desfavoritado");
+            return;
+        } else {
+            const novoFavorito = {
+                id: favoritos.length + 1,
+                cursoId: curso.cursoId,
+                titulo: curso.titulo,
+                modulos: 3,
+                aulas: 12,
+                exercicios: 5
+            };
+            setFavoritos([...favoritos, novoFavorito]);
+            Alert.alert("Curso favoritado");
+        }
     }
-    
+
+    function isFavorito(id) {
+        if (favoritos.find(favorito => favorito.cursoId === id)) setEhFavorito(true)
+        else setEhFavorito(false)
+    }
+
+    useEffect(() => {
+        isFavorito(cursoId)
+    }, [favoritos])
+
+
+
+
     return (
         <View style={styles.headerContainer}>
             <TouchableOpacity style={styles.botaoFavoritar} onPress={() => favoritar(cursoId)}>
-                <Ionicons name="star-outline" size={18} color="white" />
+                {
+                    ehFavorito ? <Ionicons name="star" size={18} color="white" />
+                        : <Ionicons name="star-outline" size={18} color="white" />
+                }
             </TouchableOpacity>
             <View style={styles.informacoesContainer}>
                 <Image source={imagem} style={styles.informacoesImagem} resizeMode="stretch" />
