@@ -1,4 +1,27 @@
-const dadosPessoais = [
+export const perfil = {
+  pessoais: {
+    nome: 'Wilson Vendramel',
+    username: '@vendramel',
+    cpf: '123.456.789-10',
+    nascimento: '01/01/2000',
+    email: "vendramel@fatec.sp.gov.br",
+    perfil: "Aluno",
+  },
+  academicos: {
+    curso: 'Engenharia de Software',
+    periodo: 'Manhã',
+    ra: '100100200',
+    ingresso: "2021",
+  },
+  seguranca: {
+    senha: "123456",
+  }
+    
+}
+
+
+
+export const dadosPessoais = [
         {
             nome: "cpf",
             conteudo: "123.456.789-10"
@@ -15,7 +38,7 @@ const dadosPessoais = [
         }
     ]
 
-const dadosAcademicos = [{
+ export const dadosAcademicos = [{
         nome: "curso",
         conteudo: "Engenharia de Software"
     }, {
@@ -30,7 +53,7 @@ const dadosAcademicos = [{
     }
     ]
 
-const lista = [
+export const lista = [
         {
           id: 1,
           title: 'Dados Pessoais',
@@ -52,5 +75,3 @@ const lista = [
           icon: 'alert-circle'
         }
       ];
-
-export { dadosPessoais, dadosAcademicos, lista}

@@ -1,12 +1,36 @@
 import { StyleSheet, Text, View, TextInput, TouchableOpacity, Alert } from 'react-native'
-import React, { useState } from 'react'
 import estilo from '../../../global/estilo'
+import React, { useState, useContext } from 'react'
+import { PerfilContext } from '../../../context/Perfil'
+import { useNavigation } from '@react-navigation/native'
 
 const EditarDadosPessoais = () => {
+  const navigation = useNavigation()
+  const {
+    dadosPessoais,
+    setDadosPessoais,
+  } = useContext(PerfilContext)
 
-  const [nome, setNome] = useState('Wilson Vendramel');
-  const [nascimento, setNascimento] = useState('01/01/2000');
-  const [perfil, setPerfil] = useState('Aluno');
+  const [nome, setNome] = useState(dadosPessoais.nome);
+  const [nascimento, setNascimento] = useState(dadosPessoais.nascimento);
+  const [perfil, setPerfil] = useState(dadosPessoais.perfil);
+  const [username, setUsername] = useState(dadosPessoais.username);
+  const [email, setEmail] = useState(dadosPessoais.email);
+  const [cpf, setCpf] = useState(dadosPessoais.cpf);
+
+  function salvar() {
+    const dadosPessoaisAlterados = {
+      nome: nome,
+      nascimento: nascimento,
+      perfil: perfil,
+      username: username,
+      email: email,
+      cpf: cpf,
+    }
+    setDadosPessoais(dadosPessoaisAlterados)
+    Alert.alert('Dados Pessoais alterados com sucesso!')
+    navigation.goBack();
+  }
 
 
   return (
@@ -14,43 +38,43 @@ const EditarDadosPessoais = () => {
       <Text style={estilo.titulo}>Editar Dados Pessoais</Text>
       <View style={styles.containerForm}>
 
-      <View style={styles.containerCampo}>
-        <Text style={estilo.subtitulo}>Nome:</Text>
-        <TextInput
-                      style={styles.entrada}
-                      value={nome}
-                      onChangeText={setNome}
-                  />
+        <View style={styles.containerCampo}>
+          <Text style={estilo.subtitulo}>Nome:</Text>
+          <TextInput
+            style={styles.entrada}
+            value={nome}
+            onChangeText={setNome}
+          />
+        </View>
+
+        <View style={styles.containerCampo}>
+          <Text style={estilo.subtitulo}>Data de Nascimento:</Text>
+          <TextInput
+            style={styles.entrada}
+            value={nascimento}
+            onChangeText={setNascimento}
+          />
+        </View>
+
+        <View style={styles.containerCampo}>
+          <Text style={estilo.subtitulo}>Perfil:</Text>
+          <TextInput
+            style={styles.entrada}
+            value={perfil}
+            onChangeText={setPerfil}
+          />
+        </View>
+
+        <TouchableOpacity
+          style={styles.botao}
+          onPress={() => salvar()}>
+          <Text style={styles.textoBotao}>
+            Salvar
+          </Text>
+        </TouchableOpacity>
+
       </View>
 
-      <View style={styles.containerCampo}>
-        <Text style={estilo.subtitulo}>Data de Nascimento:</Text>
-        <TextInput
-                      style={styles.entrada}
-                      value={nascimento}
-                      onChangeText={setNascimento}
-                  />
-      </View>
-
-      <View style={styles.containerCampo}>
-        <Text style={estilo.subtitulo}>Perfil:</Text>
-        <TextInput
-                      style={styles.entrada}
-                      value={perfil}
-                      onChangeText={setPerfil}
-                  />
-      </View>
-
-      <TouchableOpacity 
-                    style={styles.botao}
-                    onPress={()=>{Alert.alert("Não implementado")}}>
-                    <Text style={styles.textoBotao}>
-                        Salvar
-                    </Text>
-      </TouchableOpacity>
-
-      </View>
-      
     </View>
   )
 }
@@ -58,17 +82,17 @@ const EditarDadosPessoais = () => {
 export default EditarDadosPessoais
 
 const styles = StyleSheet.create({
-  containerForm:{
+  containerForm: {
     backgroundColor: '#fff',
     padding: 12,
-    justifyContent: 'center',	
+    justifyContent: 'center',
     borderRadius: 8,
     marginTop: 10,
   },
-  containerCampo:{
+  containerCampo: {
     marginVertical: 6,
     borderRadius: 8,
-   },
+  },
 
   entrada: {
     borderWidth: 2,
@@ -79,20 +103,20 @@ const styles = StyleSheet.create({
     height: 44,
     width: '96%',
     marginTop: 4
-},
-botao: {
-  backgroundColor: '#000',
-  marginTop: 20,
-  padding: 10,
-  alignItems: 'center',
-  justifyContent: 'center',
-  alignSelf: 'center',
-  borderRadius: 8,
-  width: '100%',
-},
-textoBotao: {
-  fontWeight: 'bold',
-  fontSize: 16,
-  color: '#fff',
-},
+  },
+  botao: {
+    backgroundColor: '#000',
+    marginTop: 20,
+    padding: 10,
+    alignItems: 'center',
+    justifyContent: 'center',
+    alignSelf: 'center',
+    borderRadius: 8,
+    width: '100%',
+  },
+  textoBotao: {
+    fontWeight: 'bold',
+    fontSize: 16,
+    color: '#fff',
+  },
 })

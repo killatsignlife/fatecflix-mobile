@@ -1,23 +1,27 @@
 import { StyleSheet, View, Image, Text, StatusBar } from 'react-native'
 import React from 'react'
 import Secao from './componentes/Secao';
-import { dadosPessoais, dadosAcademicos} from '../../mocks/perfil';
 import Lista from './componentes/Lista';
+import { useContext } from 'react';
+import { PerfilContext } from '../../context/Perfil'
 
 const Topo = () => {
+
+
+  const { dadosPessoais, dadosAcademicos } = useContext(PerfilContext)
+
   return (
-      <View style={styles.container}>
-        <View style={styles.containerFoto}>
-          <Image style={styles.imagem} source={require('../../../assets/imagens/vendramel.png')} />
-          <Text style={styles.nome}>Wilson Vendramel</Text>
-          <Text style={styles.nomeUsuario}>@vendramel</Text>
-        </View>
-        <Secao titulo="Dados Pessoais" campos={dadosPessoais} />
-        <Secao titulo="Dados Acadêmicos" campos={dadosAcademicos} />
-        <View style={styles.containerEditar}>
-          <Text style={styles.textoEditar}>Editar Informações</Text>
-        </View>
+    <View style={styles.container}>
+      <View style={styles.containerFoto}>
+        <Image style={styles.imagem} source={require('../../../assets/imagens/vendramel.png')} />
+        <Text style={styles.nome}>{dadosPessoais.nome}</Text>
+        <Text style={styles.nomeUsuario}>{dadosPessoais.username} </Text>
       </View>
+      <Secao />
+      <View style={styles.containerEditar}>
+        <Text style={styles.textoEditar}>Editar Informações</Text>
+      </View>
+    </View>
   )
 }
 
@@ -25,7 +29,7 @@ const Topo = () => {
 const Perfil = () => {
 
   return (
-    <Lista topo={<Topo />}/>
+    <Lista topo={<Topo />} />
   )
 }
 

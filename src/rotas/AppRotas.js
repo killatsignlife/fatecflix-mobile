@@ -9,6 +9,7 @@ import PerfilRotas from './PerfilRotas';
 import logoTipo from '../../assets/imagens/fatecflix.png'
 import AulaRotas from './AulaRotas';
 import { CursosProvider } from '../context/Cursos';
+import { PerfilProvider } from '../context/Perfil';
 
 //https://feathericons.com/
 
@@ -17,6 +18,7 @@ export default function AppRotas() {
   return (
     <NavigationContainer>
       <CursosProvider>
+      <PerfilProvider>
       <StatusBar backgroundColor="black" barStyle={'light-content'} translucent={true} />
       <Tab.Navigator
         screenOptions={({ route }) => ({
@@ -58,6 +60,7 @@ export default function AppRotas() {
         <Tab.Screen name="Curso" component={CursoRotas} />
         <Tab.Screen name="Perfil" component={PerfilRotas} />
       </Tab.Navigator>
+      </PerfilProvider>
       </CursosProvider>
     </NavigationContainer>
   )
