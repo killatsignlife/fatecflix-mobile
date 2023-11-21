@@ -35,7 +35,7 @@ const Topo = () => {
   <View style={styles.containerTopo}>
     <Image style={styles.imagem} source={require('../../../../assets/imagens/vendramel.png')} />
     <View style={styles.containerLinks}>
-          <Feather name="star" size={52} color="red" />
+          <Feather name="star" size={52} color="white" />
           <Text style={styles.textoLink}>Favoritos</Text>
   </View>
 </View>
@@ -62,7 +62,7 @@ const ListItem = ({ cursoId, aulas, modulos, titulo, exercicios }) => {
     <TouchableOpacity style={styles.containerItem} onPress={() => navigation.navigate({ 
       name: "ExibeCurso",
       params: { 
-        curso: curso.cursoId, 
+        cursoId: curso.cursoId, 
         imagem: curso.imagem, 
         titulo: curso.titulo, 
         descricao: curso.descricao, 
@@ -95,10 +95,10 @@ const styles = StyleSheet.create({
   },
   containerTopo: {
     backgroundColor: "black",
-    minHeight: 250
+    minHeight: 210
   },
   containerLinks: {
-    height: 120,
+    height: 80,
     width: "100%",
     flexDirection: "row",
     alignItems: "center",
@@ -107,7 +107,7 @@ const styles = StyleSheet.create({
   textoLink:{
     fontSize: 22,
     marginLeft: 18,
-    color: "red"
+    color: "white"
   },
   imagem: {
     width: 100,

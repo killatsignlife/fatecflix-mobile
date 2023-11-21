@@ -25,7 +25,7 @@ const Topo = () => {
   <View style={styles.containerTopo}>
     <Image style={styles.imagem} source={require('../../../../assets/imagens/vendramel.png')} />
     <View style={styles.containerLinks}>
-          <Feather name="play" size={52} color="red" />
+          <Feather name="play" size={52} color="white" />
           <Text style={styles.textoLink}>Cursos em andamento</Text>
   </View>
 </View>
@@ -36,7 +36,7 @@ const ListItem = ({ titulo, progresso, cursoId}) => {
   const navigation = useNavigation()
 
   return(
-    <TouchableOpacity style={styles.containerItem} onPress={() => navigation.navigate({ name: "Aula", params: { cursoId }} )}>
+    <TouchableOpacity style={styles.containerItem} onPress={() => navigation.navigate({ name: "Aulas", params: { cursoId }} )}>
         <View style={styles.containerTitulo}>
           <Text style={styles.textoTitulo}>{ titulo }</Text>
         </View>
@@ -60,19 +60,21 @@ const styles = StyleSheet.create({
   },
   containerTopo: {
     backgroundColor: "black",
-    minHeight: 250
+    minHeight: 210
   },
   containerLinks: {
-    height: 120,
-    width: "100%",
+    height: 80,
+    width: "88%",
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
+    alignSelf: "center",
+    borderRadius: 12,
   },
   textoLink:{
     fontSize: 22,
     marginLeft: 18,
-    color: "red"
+    color: "white"
   },
   imagem: {
     width: 100,

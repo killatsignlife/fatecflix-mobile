@@ -1,6 +1,5 @@
 import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Alert } from 'react-native'
 import React from 'react'
-import { listaCursos } from '../../../mocks/cursos'
 import { Feather } from 'react-native-vector-icons'
 import { useNavigation } from '@react-navigation/native'
 
@@ -14,7 +13,7 @@ const ListaAulas = ({ aulas, id }) => {
         <TouchableOpacity
           key={aula.aula_id}
           style={styles.containerAula}
-          onPress={() => navigation.navigate({ name: "Aula", params: { cursoId: id, aulaId: aula.aula_id }})}
+          onPress={() => navigation.navigate({ name: "Aulas", params: { cursoId: id, aulaId: aula.aula_id }})}
         >
           <Text style={styles.textoAulaTitulo}>{aula.titulo ? aula.titulo : 'Video desconhecido'}</Text>
           <Feather name="circle" size={22} color="black" />

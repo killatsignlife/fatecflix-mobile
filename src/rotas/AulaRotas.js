@@ -7,12 +7,13 @@ const Stack = createStackNavigator();
 export default function AulaRotas() {
     return (
         <Stack.Navigator
+            initialRouteName='Principal'
             screenOptions={{
                 headerShown: false,
             }}
         >
             <Stack.Screen
-                name="Aula"
+                name="Principal"
                 component={Aula}
             />
         </Stack.Navigator>

@@ -36,7 +36,7 @@ export const listaCursos = [
                 aula_id: 1 ,
                 titulo: "Aula 01 - Introdução ao tema",
                 conteudo: "Conteúdo da Aula" , 
-                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+                video: "https://www.youtube.com/watch?v=mRixno_uE2o", 
             },
             {
                 aula_id: 2 ,
@@ -241,7 +241,7 @@ export const listaCursos = [
                 aula_id: 1 ,
                 titulo: "Aula 01 - Introdução ao tema",
                 conteudo: "Conteúdo da Aula" , 
-                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+                video: "https://www.youtube.com/watch?v=_Why5uCCrXc", 
             },
             {
                 aula_id: 2 ,
@@ -351,7 +351,7 @@ export const listaCursos = [
                 aula_id: 1 ,
                 titulo: "Aula 01 - Introdução ao tema",
                 conteudo: "Conteúdo da Aula" , 
-                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+                video: "https://www.youtube.com/watch?v=Ptbk2af68e8", 
             },
             {
                 aula_id: 2 ,
@@ -461,7 +461,7 @@ export const listaCursos = [
                 aula_id: 1 ,
                 titulo: "Aula 01 - Introdução ao tema",
                 conteudo: "Conteúdo da Aula" , 
-                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+                video: "https://www.youtube.com/watch?v=LnORjqZUMIQ", 
             },
             {
                 aula_id: 2 ,
@@ -572,7 +572,7 @@ export const listaCursos = [
                 aula_id: 1 ,
                 titulo: "Aula 01 - Introdução ao tema",
                 conteudo: "Conteúdo da Aula" , 
-                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+                video: "https://www.youtube.com/watch?v=8mei6uVttho", 
             },
             {
                 aula_id: 2 ,
@@ -682,7 +682,7 @@ export const listaCursos = [
                 aula_id: 1 ,
                 titulo: "Aula 01 - Introdução ao tema",
                 conteudo: "Conteúdo da Aula" , 
-                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+                video: "https://www.youtube.com/watch?v=-JcQJFNVjaA", 
             },
             {
                 aula_id: 2 ,
@@ -792,7 +792,7 @@ export const listaCursos = [
                 aula_id: 1 ,
                 titulo: "Aula 01 - Introdução ao tema",
                 conteudo: "Conteúdo da Aula" , 
-                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+                video: "https://www.youtube.com/watch?v=e78_5WIssSU", 
             },
             {
                 aula_id: 2 ,
@@ -902,7 +902,7 @@ export const listaCursos = [
                 aula_id: 1 ,
                 titulo: "Aula 01 - Introdução ao tema",
                 conteudo: "Conteúdo da Aula" , 
-                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+                video: "https://www.youtube.com/watch?v=vxKV2UZkKm8", 
             },
             {
                 aula_id: 2 ,
@@ -1012,7 +1012,7 @@ export const listaCursos = [
                 aula_id: 1 ,
                 titulo: "Aula 01 - Introdução ao tema",
                 conteudo: "Conteúdo da Aula" , 
-                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+                video: "https://www.youtube.com/watch?v=rdPZwdTI2FU", 
             },
             {
                 aula_id: 2 ,
@@ -1122,7 +1122,7 @@ export const listaCursos = [
                 aula_id: 1 ,
                 titulo: "Aula 01 - Introdução ao tema",
                 conteudo: "Conteúdo da Aula" , 
-                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+                video: "https://www.youtube.com/watch?v=Vh6FS-pqjsM", 
             },
             {
                 aula_id: 2 ,
@@ -1232,7 +1232,7 @@ export const listaCursos = [
                 aula_id: 1 ,
                 titulo: "Aula 01 - Introdução ao tema",
                 conteudo: "Conteúdo da Aula" , 
-                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+                video: "https://www.youtube.com/watch?v=XDBwYrWFZUQ", 
             },
             {
                 aula_id: 2 ,
@@ -1342,7 +1342,7 @@ export const listaCursos = [
                 aula_id: 1 ,
                 titulo: "Aula 01 - Introdução ao tema",
                 conteudo: "Conteúdo da Aula" , 
-                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+                video: "https://www.youtube.com/watch?v=rcWm0xc8AEA", 
             },
             {
                 aula_id: 2 ,
@@ -1452,7 +1452,7 @@ export const listaCursos = [
                 aula_id: 1 ,
                 titulo: "Aula 01 - Introdução ao tema",
                 conteudo: "Conteúdo da Aula" , 
-                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+                video: "https://www.youtube.com/watch?v=4sahrcj9MAg", 
             },
             {
                 aula_id: 2 ,
@@ -1562,7 +1562,7 @@ export const listaCursos = [
                 aula_id: 1 ,
                 titulo: "Aula 01 - Introdução ao tema",
                 conteudo: "Conteúdo da Aula" , 
-                video: "https://www.youtube.com/watch?v=e41QFmkqaEY", 
+                video: "https://www.youtube.com/watch?v=VJNT5BUoK9Q", 
             },
             {
                 aula_id: 2 ,

@@ -7,9 +7,9 @@ import CursoRotas from './CursoRotas';
 import HomeRotas from './HomeRotas';
 import PerfilRotas from './PerfilRotas';
 import logoTipo from '../../assets/imagens/fatecflix.png'
-import AulaRotas from './AulaRotas';
 import { CursosProvider } from '../context/Cursos';
 import { PerfilProvider } from '../context/Perfil';
+import Aula from '../telas/Aula';
 
 //https://feathericons.com/
 
@@ -21,6 +21,7 @@ export default function AppRotas() {
       <PerfilProvider>
       <StatusBar backgroundColor="black" barStyle={'light-content'} translucent={true} />
       <Tab.Navigator
+        initialRouteName='Home'
         screenOptions={({ route }) => ({
           headerShown: true,
           tabBarActiveTintColor: '#ff0534',
@@ -31,7 +32,6 @@ export default function AppRotas() {
             if (route.name === 'Perfil') return <Header />
             if (route.name === 'Aulas') return null
           },
-            
           tabBarLabelStyle: {
             fontSize: 12,
           },
@@ -49,15 +49,17 @@ export default function AppRotas() {
               return <Feather name="home" size={18} color={color} />
             } else if (route.name === 'Curso') {
               return <Feather name="play" size={18} color={color} />
+            } else if (route.name === 'Aulas') {
+              return <Feather name="monitor" size={18} color={color} />
             } else {
               return <Feather name="user" size={18} color={color} />
             }
           },
         })}
       >
-        <Tab.Screen name="Aulas" component={AulaRotas} />
         <Tab.Screen name="Home" component={HomeRotas} />
         <Tab.Screen name="Curso" component={CursoRotas} />
+        <Tab.Screen name="Aulas" component={Aula} />
         <Tab.Screen name="Perfil" component={PerfilRotas} />
       </Tab.Navigator>
       </PerfilProvider>

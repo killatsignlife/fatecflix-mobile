@@ -11,15 +11,15 @@ const Header = () => {
         <Image style={styles.imagem} source={require('../../../../assets/imagens/vendramel.png')} />
         <View style={styles.containerLinks}>
             <TouchableOpacity style={styles.containerItem} onPress={() => navigation.navigate("CursosAndamento")}>
-                <Feather name="play" size={32} color="white" />
+                <Feather name="play" size={32} color="black" />
                 <Text style={styles.textoLink}>Cursos em andamento</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.containerItem} onPress={() => navigation.navigate("Conquistas")}>
-                <Feather name="award" size={32} color="white" />
+                <Feather name="award" size={32} color="black" />
                 <Text style={styles.textoLink}>Conquistas</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.containerItem} onPress={() => navigation.navigate("Favoritos")}>
-                <Feather name="star" size={32} color="white" />
+                <Feather name="star" size={32} color="black" />
                 <Text style={styles.textoLink}>Favoritos</Text>
             </TouchableOpacity>
 
@@ -32,8 +32,8 @@ export default Header
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: "lightcoral",
-        minHeight: 250
+        backgroundColor: "black",
+        minHeight: 180
     },
     texto: {
         fontSize: 32,
@@ -45,23 +45,26 @@ const styles = StyleSheet.create({
         height: 100,
         borderRadius: 200 / 2,
         alignSelf: "flex-end",
-        margin: 12
+        marginHorizontal: 12,
+        marginBottom: 12
     },
     containerLinks: {
-        //backgroundColor: "indianred",
-        height: 120,
+        height: 100,
         width: "80%",
         alignSelf: "center",
         flexDirection: "row",
+        justifyContent: "space-between"
     },
     containerItem: {
+        backgroundColor: "white",
         justifyContent: "center",
         alignItems: "center",
-        width: "33%",
+        width: "30%",
+        borderRadius: 12
     },
     textoLink:{
         fontSize: 13,
-        color: 'white'
+        color: 'black'
     }
 
 })

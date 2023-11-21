@@ -11,15 +11,17 @@ import python from '../../../assets/imagens/python.jpg'
 
 const Home = () => {
   return (
-    <ScrollView style={styles.container}>
+    <View style={styles.container}>
+    <ScrollView style={styles.containerScroll}>
       <Header />
       <View style={styles.containerBanners}>
         <Banner imageSrc={java} title='Faça java'/>
         <Banner imageSrc={javascript} title="Javascript emergente"/>
         <Banner imageSrc={csharp} title="Musica com C#"/>
-        <Banner imageSrc={python} title="A querida cobra Píton" />
+        <Banner imageSrc={python} title="Desvendando Python" />
       </View>
     </ScrollView>
+    </View>
   )
 }
 
@@ -30,6 +32,10 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "black",
     paddingTop: StatusBar.currentHeight + 80,
+    
+  },
+  containerScroll:{
+    paddingBottom: 80
   },
   texto: {
     fontSize: 32,

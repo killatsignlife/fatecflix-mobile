@@ -3,10 +3,12 @@ import React from 'react'
 
 const Banner = ({ imageSrc, title }) => {
   return (
+    <>
+    <Text style={styles.title}>{title}</Text>
     <View style={styles.container}>
-      <Text style={styles.title}>{title}</Text>
-      <Image style={{ width: 325, height: 300 }} source={imageSrc} />
+      <Image style={{ width: 325, height: 300, borderRadius: 8, marginLeft: -10}} source={imageSrc} />
     </View>
+    </>
   )
 }
 
@@ -14,16 +16,20 @@ export default Banner
 
 const styles = StyleSheet.create({
     container:{
-        marginTop: 40,
+        marginTop: 20,
         backgroundColor: "lightcoral",
         alignSelf: "center",
-        width: "90%",
-        height: 300,
-        marginVertical: 16,
+        width: 340,
+        height: 290,
+        marginLeft: 16,
+        borderRadius: 8,
+        paddingTop: 8
     },
     title: {
-      fontSize: 32,
+      fontSize: 28,
       color: 'white',
-      fontWeight: 'bold'
+      fontWeight: 'bold',
+      marginTop: 40,
+      textAlign: "center"
     }
 })

@@ -129,7 +129,7 @@ function Botao({ cursoId }) {
     }
 
     function continuar(id) {
-        navigation.navigate({ name: "Aula", params: { cursoId: id }} )
+        navigation.navigate({ name: "Aulas", params: { cursoId: id }} )
     }
 
     useEffect(() => {
